@@ -1458,7 +1458,12 @@
     </div>
 
 
-    <form >
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+     <input type="hidden" name="form-name" value="contact">
+
+      <p hidden>
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
 
       <h1>Quick Message</h1>
     <div class="footer-qualify-form">
@@ -1993,6 +1998,8 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+
   </script>
 
 
