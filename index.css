@@ -11,6 +11,8 @@
       overflow-x: hidden;
     }
 
+
+    
     body {
       height: 100%;
       position: relative; /* demo background */
@@ -405,11 +407,28 @@ mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;*/
-
+    top: 50% !important;
     right: 6%;
   }
 
+.quick-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+.quick-links li{
+  padding: 0px 20px;
+}
+
+.quick-links ul{
+  text-align: left;
+}
+
+.width{
+  width: 100%;
+  text-align: center;
+}
 
 }
 
@@ -2131,14 +2150,15 @@ max-width: 700px;
 
   @media screen and (max-width: 768px) {
     .testimonial-content {
-      flex-direction: column;
-      padding: 40px;
+      flex-direction: column-reverse;
+      padding: 20px;
     }
 
     .reviewer-list {
       width: 100%;
       align-items: center;
       height: auto;
+      margin: 10px;
     }
 
     .review-text-area {
@@ -2150,6 +2170,13 @@ max-width: 700px;
     .quote {
       display: none;
     }
+
+  .review-text {
+
+    font-size: 0.9rem;
+  }
+
+
   }
 
 
@@ -2756,9 +2783,18 @@ max-width: 700px;
   z-index: -1;
 }
  .righted .qualify-mother::before {
-  height: 260px;
+  height: 330px;
+  position: absolute;
 
 }
+
+ .righted .qualify-mother:last-child:before {
+  height: 240px;
+  position: absolute;
+
+}
+
+
 .qualify-mother.active {
   opacity: 1;
   transform: translateY(0);
@@ -2849,6 +2885,7 @@ max-width: 700px;
   color: #666;
   font-size: 1rem;
   max-width: 700px;
+  font-weight: 400;
 }
 
 .qualify-card:hover {
@@ -3115,8 +3152,19 @@ max-width: 700px;
       font-size:1.16rem;
       line-height:1.05;
       font-weight:700;
-      text-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      text-shadow: 0 6px 20px rgba(0, 0, 0, 0.655);
     }
+
+    .center .round{
+      position: absolute;
+      height: 230px;
+      width: 230px;
+      background: #071029;
+      border-radius: 100%;
+      top: -120px;
+      left: -80px;
+    }
+
 
     /* WAVY WHITE CUTOUT (SVG) - placed bottom-right and overlaps the image */
     .card-notch{
@@ -3159,7 +3207,7 @@ max-width: 700px;
       background-color: whitesmoke;
       border-radius:40px;
       overflow: hidden;
-      border: 2px solid #001a33;
+      
     }
 
     
@@ -3293,6 +3341,7 @@ max-width: 700px;
   overflow: hidden;
 }
 
+/*
 .footer-qualify-newsletter {
   background: #1c445a;
   border-radius: 10px;
@@ -3305,10 +3354,7 @@ max-width: 700px;
   margin-bottom: 50px;
 }
 
-.footer-qualify-logo {
-  width: 200px;
-  height: auto;
-}
+
 
 .footer-qualify-newsletter-text {
   flex: 1;
@@ -3362,12 +3408,12 @@ footer form{
   height: 200px;
   padding: 10px;
   outline: none;
-  resize: none; /* prevent user from dragging to resize */
-  overflow: auto; /* keep scrollbars when content overflows */
+  resize: none; 
+  overflow: auto;
    margin: 10px 0px;
 }
 
- /* hide the resize handle in WebKit browsers */
+
   .textarea::-webkit-resizer {
     display: none;
   }
@@ -3385,13 +3431,239 @@ footer form{
 .footer-qualify-form button:hover {
   background: #13334b;
 }
+  */
+
+
+
+  .contact-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 130vh;
+    overflow: hidden;
+  }
+
+
+    /* “Say Hello” heading outside card */
+  .say-hello {
+    position: relative;
+    font-size: 58px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    z-index: 2;
+    text-align: left;
+    width: 85%;
+    max-width: 850px;
+    bottom: 30px;
+
+  }
+
+  .say-hello span {
+    font-weight: 400;
+    color: #a9393b;
+    display: block;
+  }
+
+
+  /* 3D inverted background circle */
+  .circle-bg {
+    position: absolute;
+    top: 10px;
+    right: -30%;
+    transform: translateX(-60%);
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    box-shadow: inset 40px 40px 20px rgba(0,0,0,0.08),
+                inset -40px -40px 20px rgba(255,255,255,0.9);
+    z-index: 0;
+    transition: all 1.2s ease;
+  }
+
+  /* Inner subtle circle for depth */
+  .circle-bg::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08),
+                -20px -20px 30px rgba(255, 255, 255, 0.9);
+  }
+
+  .contact-card {
+    position: relative;
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    width: 90%;
+    z-index: 1;
+    transition: all 1.2s ease;
+    bottom: 30px;
+  }
+
+
+
+
+  /* Left form area */
+  .form-section {
+    flex: 2;
+    padding: 60px;
+  }
+
+  .form-section h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .form-section h1 span {
+    display: block;
+    font-weight: 800;
+  }
+
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .form-section input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+  }
+
+  .send-btn {
+    width: fit-content;
+    font-size: 17px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    color: #111;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .send-btn:hover {
+    color: #999;
+  }
+
+  /* Right info area with line pattern */
+  .info-section {
+    position: relative;
+    flex: 1;
+    background: linear-gradient(135deg, #cdb8aa, #a39183);
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+  }
+
+  /* angled lines overlay */
+  .info-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.231) 0px,
+      rgba(255, 255, 255, 0.16) 2px,
+      transparent 2px,
+      transparent 10px
+    );
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .info-section div {
+    position: relative;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-size: 15px;
+    z-index: 1;
+    width: 300px;
+  }
+
+
+
+    /* --- Animations --- */
+  .slide-leftw {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+
+  .slide-rightw {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+
+
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .contact-card {
+      flex-direction: column;
+    }
+
+    .form-section, .info-section {
+      padding: 40px 20px;
+    }
+
+    .form-section h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .circle-bg {
+
+      top:  27%;
+      left: 60%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+
+
+
+.footer-qualify{
+  padding: 60px 0px;
+}
+
+.footer-qualify-logo {
+  width: 200px;
+  height: auto;
+}  
+
 
 .footer-qualify-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 40px;
   margin-bottom: 40px;
+  margin-top: 10px;
+  padding: 0px 5%;
 }
+  
 
 .footer-qualify-col h3 {
   color: #fff;
@@ -3433,12 +3705,12 @@ footer form{
 
 .footer-qualify-bottom {
   border-top: 1px solid #234258;
-  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   font-size: 1rem;
   color: #a5b8c3;
+  padding: 20px 5% 0px 5%;
 }
 
 .footer-qualify-bottom-links {
@@ -3486,3 +3758,5 @@ footer form{
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+
