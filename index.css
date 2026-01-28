@@ -273,7 +273,7 @@ background:
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: absolute;
   top: 40%;
-  left: 46%;
+  left: 37%;
   transform: translate(-50%, -50%);
   font-weight: 900;
   color: rgba(0, 0, 0, 0.947);
@@ -308,7 +308,7 @@ background:
 }
 
 .image-front img {
-  width: 75%;
+  width: 110%;
 /* Transparent image with gradient at bottom */
 mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
 -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
@@ -2330,7 +2330,7 @@ max-width: 700px;
 
 
 .Me .Me-profile-img {
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   position: relative;
   z-index: 2;
@@ -3063,7 +3063,7 @@ max-width: 700px;
       align-items:center;
     }
 
-    /* ===== LEFT / RIGHT STACKS ===== */
+    /*  LEFT / RIGHT STACKS */
     .stack{
       display:flex;
       flex-direction:column;
@@ -3284,7 +3284,7 @@ max-width: 700px;
       min-height:200px;
     }
 
-    /* ===== Animations on scroll (fade/slide up) ===== */
+    /* Animations on scroll (fade/slide up)  */
     .reveal{
       opacity:0;
       transform: translateY(18px);
