@@ -20,6 +20,10 @@
       zoom: 90%;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
+      font-size:1.1rem;
+      background-color: #fff;
+
+
     }
 
 
@@ -2241,7 +2245,7 @@ max-width: 700px;
   left: -150px;
   width: 350px;
   height: 300px;
-  background-color: #e74575;
+  background-color: #000000;
   border-radius: 60% 40% 30% 90% / 60% 30% 70% 40%;
 }
 
@@ -2250,7 +2254,7 @@ max-width: 700px;
   right: -100px;
   width: 350px;
   height: 300px;
-  background-color: #e74575;
+  background-color: #000000;
   border-radius: 30% 70% 70% 30% / 40% 50% 50% 60%;
 }
 
@@ -2293,18 +2297,19 @@ max-width: 700px;
 .Me .Me-image-side {
   position: relative;
   flex: 1;
-  min-width: 280px;
+  min-width: 300px;
   display: flex;
   justify-content: center;
 }
 
 .Me .Me-img-bg {
   position: absolute;
-  background-color: #021646;
-  width: 90px;
-  height: 350px;
-  top: 70px;
-  left: 68%;
+  background-color: transparent;
+  border-right: #5f5858  solid 2px;
+  width: 95px;
+  height: 100%;
+  top: -20px;
+  left: 85%;
   transform: translateX(-50%);
   z-index: 0;
 }
@@ -2319,15 +2324,15 @@ max-width: 700px;
 
 
 /* Decorative circular background behind the profile image */
-.Me .Me-image-side::before {
+.Me .Me-text-side::before {
   content: '';
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: #ce053a;
+  background-color: #6801013a;
   border-radius: 50%;
   top: 50%;
-  left: 20%;
+  right: -15%;
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0.8;
@@ -2335,15 +2340,44 @@ max-width: 700px;
 
 
 
+.about{
+    max-width:100%;
+    margin:auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.about h2{
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+.intro{
+    font-size:1.2rem;
+    line-height:1.8;
+    color:#000000;
+    font-weight:500;
+}
+
+.dropcap{
+    float:left;
+    font-size:4.5rem;
+    line-height:0.5;
+    font-weight:bold;
+    margin-right:5px;
+    margin-top:8px;
+    color:#2b2b2b;
+}
+
+
 
 .Me .Me-image-side::after {
   content: '';
   position: absolute;
-  width: 350px;
+  width: 550px;
   background-color: transparent;
-  border-bottom: 90px solid #021646;
+  border-bottom: 90px solid #000102;
   bottom: 10%;
-  left: 10%;
+  left: 20%;
   transform: translateX(-50%);
   z-index: 0;
   border-radius: 20px;
@@ -2354,7 +2388,7 @@ max-width: 700px;
 
 @media (max-width: 704px) {
   .Me .Me-image-side::after {
-  border-bottom: 60px solid #021646;
+  border-bottom: 60px solid #000000;
   bottom: 4%;
 
   }
@@ -2362,12 +2396,12 @@ max-width: 700px;
 
 
 .Me .Me-profile-img {
-  width: 90%;
+  width: 100%;
   max-width: 100%;
   position: relative;
   z-index: 2;
-  top: 50px;
-  
+  top: 6px;
+  left: 17%;
   
 }
 
@@ -2428,7 +2462,7 @@ max-width: 700px;
 .Me .Me-social-icons a {
   display: inline-block;
   color: #fff;
-  background-color: #e91e63;
+  background-color:  rgba(138, 0, 0, 0.89);
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -2502,11 +2536,19 @@ max-width: 700px;
   .Me .phone{
     padding: 10px;
     margin: 10px 10px 10px 0px;
-    background: linear-gradient(to right, rgb(18, 1, 59), rgb(1, 45, 75));
+    background: linear-gradient(135deg, rgba(216, 11, 11, 0.89) 0%, black 60%);
     color: white;
-    border-radius: 20px;
+    border-radius: 30px 0px 30px 0px;
     transition: ease-in-out .3s ;
     cursor: pointer;
+    font-weight: 700;
+
+  }
+
+  .about .email {
+    width: 70%;
+    background: linear-gradient(135deg,black 10%,  rgba(216, 11, 11, 0.89) 90%);
+
   }
 
   .Me .muted-small{
@@ -2516,17 +2558,14 @@ max-width: 700px;
 
 
    .Me .phone:hover{
-    transform: translateY(-8px) rotate(-2deg) scale(1.06);
+    transform: translateY(4px) rotate(-2deg) scale(1.03);
     transform-origin: center;
-    box-shadow: 0 10px 20px rgba(201,12,88,0.22), 0 6px 14px rgba(0,0,0,0.28);
-    background: linear-gradient(135deg, #ff6b8a 0%, #c21f3f 60%);
+    box-shadow: 0 5px 10px rgba(201, 12, 44, 0.22), 0 6px 14px rgba(0,0,0,0.28);
+    background: rgba(216, 11, 11, 0.89);
     color: #fff;
-    filter: saturate(1.05) contrast(1.03);
     text-shadow: 0 2px 8px rgba(0,0,0,0.35);
     letter-spacing: 0.4px;
-    outline: none;
-    transition: transform 320ms cubic-bezier(.2,.9,.3,1), box-shadow 320ms ease, background 320ms ease, filter 320ms ease;
-    will-change: transform, box-shadow;
+
   }
 
 .compet {
