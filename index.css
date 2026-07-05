@@ -353,7 +353,7 @@ mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
 .terminal-counter {
   font-family: 'Arial', 'Helvetica', sans-serif; /* bold sans-serif font */
   font-weight: 900; /* make text bold */
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: rgb(225, 55, 55); /* terminal green */
   display: flex;
   align-items: center;
@@ -575,35 +575,35 @@ mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
 }
 
 /* Second and third bubble colors */
-.bubble2 {
+.bubble2, .bubble4, .bubble6{
   background: radial-gradient(circle at 30% 30%, #ab0a0f, #cd3817);
 }
 
-.bubble3 {
-  background: radial-gradient(circle at 30% 30%, #f50c0c, #ce4d0d);
+.bubble3, .bubble5, .bubble8 {
+  background: radial-gradient(circle at 30% 30%, #0c2ff5, #e2c209);
 }
 
-.bubble4 {
-  background: radial-gradient(circle at 30% 30%, #c21f1f, #c92727);
+.bubble7, .bubble9, .bubble1 {
+  background: radial-gradient(circle at 30% 30%, #16e632, #c427c9);
 }
 
 /* Bubble animations */
 .bubble1 {
   animation: ricochet1 6s ease-in-out infinite;
-  top: 70%;
+  top: 10%;
   left: 10%;
 }
 
 .bubble2 {
   animation: ricochet2 8s ease-in-out infinite;
-  top: 60%;
-  left: 50%;
+  bottom: 60%;
+  right: 50%;
 }
 
 .bubble3 {
   animation: ricochet3 7s ease-in-out infinite;
-  bottom: 90%;
-  left: 50%;
+  bottom: 45%;
+  left: 70%;
 }
 
 .bubble4 {
@@ -611,6 +611,37 @@ mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
   top: 80%;
   left: 80%;
 }
+
+
+.bubble5 {
+  animation: ricochet4 5s ease-in-out infinite;
+  top: 40%;
+  left: 30%;
+}
+
+.bubble6 {
+  animation: ricochet4 8s ease-in-out infinite;
+  bottom: 20%;
+  right: 70%;
+}
+
+.bubble7 {
+  animation: ricochet4 9s ease-in-out infinite;
+  top: 30%;
+  left: 90%;
+}
+.bubble8 {
+  animation: ricochet4 7s ease-in-out infinite;
+  bottom: 20%;
+  left: 10%;
+}
+
+.bubble9 {
+  animation: ricochet4 6s ease-in-out infinite;
+  top: 10%;
+  right: 20%;
+}
+
 
 /* Keyframes for ricochet-like movement (curved diagonal + bounce) */
 @keyframes ricochet1 {
@@ -2471,7 +2502,7 @@ max-width: 700px;
   .Me .phone{
     padding: 10px;
     margin: 10px 10px 10px 0px;
-    background: linear-gradient(to right, rgb(201, 12, 88), rgb(129, 0, 56));
+    background: linear-gradient(to right, rgb(18, 1, 59), rgb(1, 45, 75));
     color: white;
     border-radius: 20px;
     transition: ease-in-out .3s ;
