@@ -7,26 +7,24 @@
     <title>WilliamSunny | Portfolio</title>
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-skill.css">
+    <link rel="stylesheet" href="index-footer.css">
+    <link rel="stylesheet" href="index-blog.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-
- <!-- Favicon (logo in tab) -->
   <link rel="icon" type="image/png" sizes="40x40" href="favy.png">
 
-  <!-- Optional: Apple devices (iPhone/iPad) -->
   <link rel="apple-touch-icon" href="favy.png">
 
-    
 </head>
 
 <body>
 
-
-  <!-- Side Menu -->
   <div class="side-menu" id="sideMenu">
     <button class="close-btn" id="closeBtn">&times;</button>
-    <a href="#Home">Home</a>
+    <a href="#Home" class="active">Home</a>
     <a href="#About">About</a>
     <a href="#Skill">Skills</a>
     <a href="#Services">Services</a>
@@ -37,19 +35,14 @@
     <a href="#form" class="cta" >Hire Me</a>
   </div>
 
-  <!-- Quick CTA -->
-  <a href="#form" class="quick-cta cta">Hire Me</a>
-
-
-
-  <!-- Page Content -->
+  
 
 <div class="content-wrapper">
 
 
+<!-- HERO SECTION -->
 
-
-<section  class="hero" id="Home">
+<section  class="hero" id="home">
 <div class="hero-bg"></div>
 
 <header>
@@ -59,7 +52,7 @@
     </div>
 
     <div class="nav-links">
-      <a href="#Home">Home</a>
+      <a href="#Home" class="active">Home</a>
       <a href="#About">About</a>
       <a href="#Skill">Skills</a>
       <a href="#Services">Services</a>
@@ -89,34 +82,42 @@
 <div class="bubble bubble8"></div>
 <div class="bubble bubble9"></div>
 
-
-
 </div>
 
 
+<div class="hero-rating-card">
+  <div class="hero-rating-copy">
+    <span class="hero-rating-label">Rated</span>
+    <strong class="hero-rating-title">Reliable</strong>
+  </div>
 
-<div class="hero-content">
-    
-<!-- Image in front of text container -->
-<div class="image-layer-container">
-  <!-- Text behind the image -->
-
-  <h1 class="background-text">William</h1>
-  <p class="background-subtext">Customer Rep × Front-end Developer</p>
-
-  <!-- Image in front -->
-  <div class="image-front">
-    <img src="potrait1.png" alt="Headshot">
+  <div class="hero-rating-stars" aria-label="Rated four stars">
+    <span>★</span>
+    <span>★</span>
+    <span>★</span>
+    <span>★</span>
   </div>
 </div>
 
-<!-- Terminal Text Effect Container -->
 
+<div class="hero-content">
+
+
+
+
+
+<div class="image-layer-container">
+
+  <h1 class="background-text">William</h1>
+  <p class="background-subtext">Sunday</p>
+
+  <div class="image-front fade-up">
+    <img src="potrait1.png" alt="Headshot">
+  </div>
+
+</div>
 
 <div class="allterm">
-    
-
-  
 
 <div class="terminal-counter">
   <span class="terminal-prefix">| </span>
@@ -124,46 +125,57 @@
   <span class="cursor">|</span>
 </div>
 
-
-
 <div class="cta-block">
-  <!-- Tagline -->
- <!-- <p class="cta-tagline">Driven to Serve, Skilled to Build - Ready to Contribute and Eager to Grow</p> -->
-
-  <!-- CTA buttons -->
+  <span class="cta-tagline"> 
+    I design intuitive digital experiences while bringing exceptional customer service, 
+    hospitality expertise, and creative thinking.</span>
   <div class="cta-buttons">
     <a href="#work" class="btn btn-primary">See My Work</a>
-    <a href="CURRICULO DE WILLIAMS2 (3).pdf" class="btn btn-secondary" download>Download CV</a>
+    <a href="WILLIAM SUNDAY.pdf" class="btn btn-secondary" download>Download CV</a>
   </div>
 </div>
 
 </div>
 
-<!-- Language and Location Tags -->
-<div class="lang-location-tags">
-  <div class="info-item">
-    <div class="icon-circle">
-      <i class="fas fa-language"></i>
+<div class="hero-info-cards">
+
+  <!-- Availability Card -->
+  <article
+    class="hero-mini-card hero-availability-card"
+    aria-label="Currently available for opportunities"
+  >
+    <div class="hero-availability-icon">
+      <span class="hero-availability-tick">✓</span>
+      <span class="hero-availability-pulse"></span>
     </div>
-    <p>English (Fluent)</p>
-    <p>Portuguese (B1)</p>
-    <p>Igbo (Native)</p>
 
-  </div>
+    <span class="hero-card-label">Status</span>
+    <strong class="hero-card-title">Available</strong>
+    <small class="hero-card-subtitle">For opportunities</small>
+  </article>
 
 
-  <div class="info-item">
-    <div class="icon-circle location-icon">
-      <i class="fas fa-map-marker-alt"></i>
+  <!-- Languages Card -->
+  <article
+    class="hero-mini-card hero-language-card"
+    aria-label="Languages spoken"
+  >
+    <div class="hero-language-icon">
+      <span>A</span>
+      <span>文</span>
     </div>
-    <p>Lisbon, Portugal</p>
-  </div>
+
+    <span class="hero-card-label">Languages</span>
+
+    <div class="hero-language-list">
+      <span>EN <small>Fluent</small></span>
+      <span>PT <small>B2</small></span>
+      <span>IG <small>Native</small></span>
+    </div>
+  </article>
 
 </div>
 
-
-
-    <!-- Left floating panel -->
     <aside class="left-panel" aria-labelledby="panel-title">
       <div class="ribbon" role="note">7+ years</div>
       <div class="panel-head">
@@ -195,433 +207,1566 @@
 
 </div>
 
-
-
- <div class="social-container">
-    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="mailto:example@email.com"><i class="fas fa-envelope"></i></a>
-  </div>
-
-
-
-  
-</section>
-
-<section class="Me" id="About">
-  
-  <div class="Me-content">
-    <div class="Me-image-side">
-      <div class="Me-img-bg"></div>
-      <img src="ABOUT ME.png" alt="Profile Image" class="Me-profile-img">
-    </div>
-
-<div class="Me-text-side">
-
-  <section class="about">
-    
-
-    <p class="intro">
-        <span class="dropcap">H</span>ello, my name is Williams. 
-        I am driven to Serve, Skilled to Build - Ready to Contribute and Eager to Grow.
-        I enjoy turning ideas into meaningful outcomes and 
-        continuously improving my skills through learning and practice. <br> <br>
-
-      
-      <span>I am passionate about creating clean, functional, 
-      and modern digital experiences while also excelling in people-focused roles that 
-      require adaptability, Organization, teamwork, and excellent client satisfaction. I’ve learned to listen actively, 
-      respond with empathy, and provide solutions that leave people feeling valued.</span>
-    
-    </p>
-
-          <div class="contact" style="margin-top:22px;">
-        <div class="phone"><i class="fas fa-phone" aria-hidden="true"></i> +351 927 387 851</div>
-        <div class="muted-small">Reach out</div>
-      </div>
-        <div class="phone email"><i class="fas fa-envelope" aria-hidden="true"></i> williamssunday714@gmail.com</div>
-
-
-
-        <div class="Me-social-icons">
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-behance"></i></a>
-      </div>
-
 </section>
 
 
-    </div>
-  </div>
-</section>
-
-
-<!--
-<div class="marquee-container" id="Work">
-    <div class="marquee-wrapper">
-      <div class="marquee">
-        
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"> CSS</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress"> WordPress</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"> GitHub</div>
-        <div class="skill"><img src="Excel.png" alt="MS Office"> Excel</div>
-        <div class="skill"><img src="1200x630wa.png" alt="MS Office"> Word</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google"> Google Ads</div>
-        <div class="skill" style="margin-right: 10px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google"> Gmail / Email Tools</div>
-
-        
-        <div class="skill"><img src="check.png" alt="HTML"> Communication</div>
-        <div class="skill"><img src="check.png" alt="CSS"> Teamwork</div>
-        <div class="skill"><img src="check.png" alt="JavaScript"> Problem Solving</div>
-        <div class="skill"><img src="check.png" alt="WordPress"> Customer Service</div>
-        <div class="skill"><img src="check.png" alt="GitHub"> IT Support</div>
-        <div class="skill" style="margin-right: 10px;"><img src="check.png" alt="MS Office"> CRM Tools</div>
+<!--ABOUT SECTION-->
+<section class="MAIIN-ABOUT" id="about" aria-labelledby="MAIIN-ABOUT-title">
+      <div class="MAIIN-ABOUT__ambient" aria-hidden="true">
+        <span class="MAIIN-ABOUT__orb MAIIN-ABOUT__orb--one"></span>
+        <span class="MAIIN-ABOUT__orb MAIIN-ABOUT__orb--two"></span>
+        <span class="MAIIN-ABOUT__orb MAIIN-ABOUT__orb--three"></span>
+        <span class="MAIIN-ABOUT__grid"></span>
       </div>
 
-      
-      <div class="marquee">
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"> CSS</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress"> WordPress</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"> GitHub</div>
-        <div class="skill"><img src="Excel.png" alt="MS Office"> Excel</div>
-        <div class="skill"><img src="1200x630wa.png" alt="MS Office"> Word</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google"> Google Ads</div>
-        <div class="skill" style="margin-right: 10px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google"> Gmail / Email Tools</div>
+      <div class="MAIIN-ABOUT__shell">
+        <div class="MAIIN-ABOUT__hero">
+          <div class="MAIIN-ABOUT__copy">
+            <p class="MAIIN-ABOUT__eyebrow">
+              <span class="MAIIN-ABOUT__eyebrow-dot"></span>
+              About Me
+            </p>
 
-        <div class="skill"><img src="check.png" alt="HTML"> Communication</div>
-        <div class="skill"><img src="check.png" alt="CSS"> Teamwork</div>
-        <div class="skill"><img src="check.png" alt="JavaScript"> Problem Solving</div>
-        <div class="skill"><img src="check.png" alt="WordPress"> Customer Service</div>
-        <div class="skill"><img src="check.png" alt="GitHub"> IT Support</div>
-        <div class="skill" style="margin-right: 10px;"><img src="check.png" alt="MS Office"> CRM Tools</div>
-      </div>
-    </div>
-  </div>
--->
+            <h2 class="MAIIN-ABOUT__title" id="MAIIN-ABOUT-title">
+              Driven To Serve<br>
+              <span>Skilled To Create.</span>
+            </h2>
 
-  <!--
-  <div class="wrap" id="About">
+             
 
-    <div class="intro" >
-    
-    <div class="textintro"> 
+            <p class="MAIIN-ABOUT__lead">
+              I combine <strong> Creative Frontend Development </strong> with
+              <strong>People-First Serviec</strong> to build instinctive digital 
+              experiences and meaningful customer interactions that Foster credibility
+              and create lasting value.
+            </p>
 
-    <h1 class="section-title">About Me</h1>
-    <h2>Williams Chibueze Sunday <br>
-      <p style="color: rgb(39, 38, 38);font-size: 15px;">Front-end Developer & 
-          Customer Service Specialist - Experienced in Restaurant/Hospitality
-      </p>
-    </h2>
-    <span class="lead"><b>Driven to Serve, Skilled to Build - Ready to Contribute and Eager to Grow</b> <br>
-      I am Williams Sunny, a proactive and versatile professional 
-      with experience in website design, customer service, hospitality, restaurant 
-      operations, and digital design. I am passionate about creating clean, functional, 
-      and modern digital experiences while also excelling in people-focused roles that 
-      require adaptability, teamwork, and excellent client satisfaction.</span> <br>
-      <button>Know More</button>
+            
 
+            <div class="MAIIN-ABOUT__stats" aria-label="Career highlights">
+              <article class="MAIIN-ABOUT__stat">
+                <span class="MAIIN-ABOUT__stat-icon MAIIN-ABOUT__stat-icon--red" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M8 7V5.8A2.8 2.8 0 0 1 10.8 3h2.4A2.8 2.8 0 0 1 16 5.8V7m-11 4h14M5 7h14a2 2 0 0 1 2 2v9a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V9a2 2 0 0 1 2-2Z"/></svg>
+                </span>
+                <small style="color: rgb(197, 3, 3);">Dedicated</small>
+              </article>
 
+              <article class="MAIIN-ABOUT__stat">
+                <span class="MAIIN-ABOUT__stat-icon MAIIN-ABOUT__stat-icon--navy" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6 4V2M18 4V2M4 5h16a1 1 0 0 1 1 1v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1Zm0 3h16M8 13l2 2 4-4M8 17l2 2 4-4"/></svg>
+                </span>
+                <small>Organized</small>
+              </article>
 
-    </div>
+              <article class="MAIIN-ABOUT__stat">
+                <span class="MAIIN-ABOUT__stat-icon MAIIN-ABOUT__stat-icon--red" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM12 6v6l4 2"/></svg>
+                </span>
+                <small style="color: rgb(197, 3, 3);">Adaptable</small>
+              </article>
 
-    <div class="imgintro">
-
-      <div class="imgpic">
-      <img src="classic-studio-portrait-black-american-male-dressed-suit-grey-vignette-background.png" alt="">
-      </div>
-
-      <div class="imgtext">
-        <h2>Williams <br> Chibueze Sunday</h2>
-        <p style="color: rgb(86, 86, 86);">Front-end Developer & 
-          Customer Service Specialist - Experienced in Restaurant/Hospitality
-        </p>
-
-
-  <div class="skill-container">
-    <div class="skill">
-      <div class="skill-title">
-        <span>Website Designer (Design & Flow)</span>
-        <span class="skill-percent" data-target="95">0%</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress designer"></div>
-      </div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-title">
-        <span>Waiter (Service Skills)</span>
-        <span class="skill-percent" data-target="85">0%</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress waiter"></div>
-      </div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-title">
-        <span>Customer Service (Interpersonal)</span>
-        <span class="skill-percent" data-target="90">0%</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress customer"></div>
-      </div>
-    </div>
-
-        <div class="skill">
-      <div class="skill-title">
-        <span>IT Support (Work Ethics)</span>
-        <span class="skill-percent" data-target="93">0%</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress IT"></div>
-      </div>
-    </div>
-  </div>
-
-      </div>
-
-
-      
-
-    </div>
-
-
-  </div>
-
-
-
-    
-  </div>
-
-  -->
-
-
-<section class="compet" id="Skill">
-
-  
-    <div class="compet-bg"></div>
-    <div class="compet-container zoom-in">
-      <h2 class="compet-title">Tools I Work With</h2>
-      <p class="compet-desc">
-       I combine digital design, IT support, and customer service into one goal: creating meaningful, efficient, and engaging experiences.
-      </p>
-
-      <div class="compet-content">
-        <div class="compet-label">Skills</div>
-
-        <div class="compet-skills">
-          <div class="compet-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""><p>CSS3</p></div>
-          <div class="compet-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><p>JavaScript</p></div>
-          <div class="compet-skill"><img src="microsoft team.webp" alt=""><p>Microstf Team</p></div>
-          <div class="compet-skill"><img src="zendesk.png" alt=""><p>Zendesk</p></div>
-          <div class="compet-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt=""><p>Google Workplace</p></div>
-          <div class="compet-skill"><img src="github1.png" alt=""><p>GitHub</p></div>
-          <div class="compet-skill"><img src="microsoft 365.png" alt=""><p>Microsoft 365</p></div>
-          <div class="compet-skill"><img src="Zoom-icon.png" alt=""><p>Zoom</p></div>
-          <div class="compet-skill"><img src="Salesforce.com_logo.svg.png" alt=""><p>Salesforce</p></div>
-          <div class="compet-skill"><img src="figma1.png" alt=""><p>Figma</p></div>
-        </div>
-
-        <div class="compet-indicator"></div>
-      </div>
-    </div>
-  </section>
-
-
-  
-
-<div class="creative" role="region" aria-label="Creative agency poster replica" id="Services">
-  <div class="herow">
-      <h2 class="qualify-title ">
-      <span class="qualify-back-text ">SERVICES</span>
-      <span class="qualify-front-text ">MY SERVICES</span>
-    </h2>
-  </div>
-
-  <div class="content">
-    <!-- Right Section -->
-    <div class="right">
-      <div class="services-title">
-        <h3>My Fields of Excellence</h3>
-        <div class="muted-small" style="color: gray;">What we offer</div>
-      </div>
-
-      <div class="services" aria-hidden="true">
-
-        <div class="service-item slide-right">
-          <div class="service-icon">
-            <div class="inner"><img src="icons8-coding-50.png" alt="Web design icon"></div>
+              <article class="MAIIN-ABOUT__stat">
+                <span class="MAIIN-ABOUT__stat-icon MAIIN-ABOUT__stat-icon--navy" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M8 4h8v3a4 4 0 0 1-8 0V4Zm-3 1h3v2a4 4 0 0 1-3-2Zm14 0h-3v2a4 
+                    4 0 0 0 3-2ZM12 11v5m-4 4h8m-6-4h4"/></svg>
+                </span>
+                <small>Creative</small>
+              </article>
+            </div>
           </div>
-          <div class="service-body">
-            <h4>Adaptive & Beautiful Web Designs</h4>
-            <p>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+
+          <div class="MAIIN-ABOUT__visual">
+            <div class="MAIIN-ABOUT__visual-rings" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="MAIIN-ABOUT__orbit-runner" aria-hidden="true">
+              <span class="MAIIN-ABOUT__orbit-dot"></span>
+            </div>
+
+            <div class="MAIIN-ABOUT__planet" aria-hidden="true">
+              <span class="MAIIN-ABOUT__planet-surface"></span>
+            </div>
+
+            <div class="MAIIN-ABOUT__availability MAIIN-ABOUT-float-card">
+              <span class="MAIIN-ABOUT__pulse"></span>
+              <div>
+                <small>Available for</small>
+                <strong>Opportunities</strong>
+              </div>
+            </div>
+
+            <div class="MAIIN-ABOUT__location MAIIN-ABOUT-float-card">
+              <span class="MAIIN-ABOUT__pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21s6-5.5 6-11a6 6 0 1 0-12 0c0 5.5 6 11 6 11Zm0-8.5A2.5 2.5 0 1 0 12 7a2.5 2.5 0 0 0 0 5.5Z"/></svg>
+              </span>
+              <div>
+                <small>Location</small>
+                <strong>Lisbon, Portugal</strong>
+              </div>
+              <span class="MAIIN-ABOUT__online" aria-label="Available"></span>
+            </div>
+
+            <div class="MAIIN-ABOUT__plane" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M56 8 7 28l20 8 8 20L56 8Zm-29 28 12-11"/></svg>
+            </div>
+
+            <div class="MAIIN-ABOUT__portrait" data-tilt>
+              <div class="MAIIN-ABOUT__portrait-glow"></div>
+              <video
+                  class="avatar-video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  poster="avatar.png">
+                  <source src="avatar_transparent.webm" type="video/webm">
+              </video>
+            </div>
+
+            <div class="MAIIN-ABOUT__clients MAIIN-ABOUT-float-card">
+              <strong><span class="MAIIN-ABOUT-counter" data-target="5">0</span>+</strong>
+              <span>Happy Clients<br>Worldwide</span>
+              <div class="MAIIN-ABOUT__faces" aria-hidden="true">
+
+                <i><img src="teacher5.jpg" alt=""></i>
+                <i><img src="teacher2.jpg" alt=""></i>
+                <i><img src="testimony3.jpg" alt=""></i>
+                <i><img src="teacher6.jpg" alt=""></i>
+                <b>+</b>
+              </div>
+            </div>
+
+            <span class="MAIIN-ABOUT__decor MAIIN-ABOUT__decor--a"></span>
+            <span class="MAIIN-ABOUT__decor MAIIN-ABOUT__decor--b"></span>
+            <span class="MAIIN-ABOUT__decor MAIIN-ABOUT__decor--c"></span>
           </div>
         </div>
 
-        <div class="service-item service-item-rit slide-left">
-          <div class="service-icon">
-            <div class="inner"><img src="icons8-online-support-50.png" alt="Support icon"></div>
-          </div>
-          <div class="service-body">
-            <h4>Pro Client Care Services</h4>
-            <p>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </div>
-        </div>
+        <div class="MAIIN-ABOUT__cards">
+          <article class="MAIIN-ABOUT__panel MAIIN-ABOUT__approach" data-tilt>
+            <div class="MAIIN-ABOUT__panel-line"></div>
+            <h3>My Approach</h3>
+            <p>
+            Every meaningful experience starts with understanding people. 
+            I listen actively, respond with empathy, and deliver solutions 
+            that inspire confidence and trust.
+            </p>
+            <a class="MAIIN-ABOUT__button" href="#" aria-label="Download CV">
+              Download CV
+              <svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 21h14"/></svg>
+            </a>
+          </article>
 
-        <div class="service-item slide-right">
-          <div class="service-icon">
-            <div class="inner"><img src="icons8-administrative-tools-64.png" alt="IT icon"></div>
-          </div>
-          <div class="service-body">
-            <h4>NextGen IT Support</h4>
-            <p>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </div>
-        </div>
+          <article class="MAIIN-ABOUT__panel MAIIN-ABOUT__services">
+            <h3><span></span>Current Focus</h3>
+            <ul>
+              <li>
+                <i>
+                  <svg
+                    class="focus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 64 64"
+                    aria-hidden="true"
+                  >
+                    <rect
+                      x="10"
+                      y="12"
+                      width="44"
+                      height="31"
+                      rx="3"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    />
 
-        <div class="service-item service-item-rit slide-left">
-          <div class="service-icon">
-            <div class="inner"><img src="icons8-waiter-50.png" alt="Hospitality icon"></div>
-          </div>
-          <div class="service-body">
-            <h4>GuestCare + Hospitality</h4>
-            <p>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </div>
-        </div>
+                    <path
+                      d="M10 36h44"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
 
+                    <path
+                      d="M27 44v7M37 44v7M21 52h22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+                <span>Frontend Development</span>
+              </li>
+
+
+              <li>
+                <i>
+                <svg
+                class="focus-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+                aria-hidden="true"
+              >
+                <path
+                  d="M16 32a16 16 0 1 1 32 0"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+                <rect
+                  x="12"
+                  y="30"
+                  width="8"
+                  height="15"
+                  rx="4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+
+                <rect
+                  x="44"
+                  y="30"
+                  width="8"
+                  height="15"
+                  rx="4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+
+                <path
+                  d="M48 42c0 6-5 10-10 10h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+                <circle
+                  cx="30"
+                  cy="52"
+                  r="2.5"
+                  fill="currentColor"
+                />
+                </svg>
+                </i><span>Customer Service</span></li>
+              
+              <li>
+                <i>
+                <svg
+                  class="focus-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                  aria-hidden="true"
+                >
+                  <circle
+                    cx="32"
+                    cy="13"
+                    r="3"
+                    fill="currentColor"
+                  />
+
+                  <path
+                    d="M32 16v5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+
+                  <path
+                    d="M14 43c0-13 8-22 18-22s18 9 18 22"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+
+                  <path
+                    d="M10 43h44"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+
+                  <path
+                    d="M15 50h34"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                </i>
+                <span>Hospitality</span>
+              </li>
+
+              <li>
+                <i>
+                <svg
+                  class="focus-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7 25 32 13l25 12-25 12L7 25Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linejoin="round"
+                  />
+
+                  <path
+                    d="M18 31v12c8 6 20 6 28 0V31"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <path
+                    d="M57 26v15"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+
+                  <circle
+                    cx="57"
+                    cy="44"
+                    r="2.5"
+                    fill="currentColor"
+                  />
+                </svg>
+                </i>
+                <span>Contiinuous Growth</span>
+              </li>
+
+            </ul>
+          </article>
+
+          <article class="MAIIN-ABOUT__panel MAIIN-ABOUT__tech">
+            <div class="MAIIN-ABOUT__panel-head">
+              <h3><span></span>My Process</h3>
+              <button type="button" class="MAIIN-ABOUT__view-all">View all <b>→</b></button>
+            </div>
+
+            <div class="MAIIN-ABOUT__tech-grid">
+<div class="WS-process" aria-label="My design and development process">
+
+  <svg
+    class="WS-process__circuit"
+    aria-hidden="true"
+    preserveAspectRatio="none"
+  >
+    <defs>
+      <linearGradient
+        id="WS-process-gradient"
+        x1="0"
+        y1="0"
+        x2="1"
+        y2="0"
+      >
+        <stop offset="0%" stop-color="#ff1f3d"></stop>
+        <stop offset="50%" stop-color="#ff5369"></stop>
+        <stop offset="100%" stop-color="#ff1f3d"></stop>
+      </linearGradient>
+
+      <filter
+        id="WS-process-glow"
+        x="-100%"
+        y="-100%"
+        width="300%"
+        height="300%"
+      >
+        <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+
+        <feMerge>
+          <feMergeNode in="blur"></feMergeNode>
+          <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+      </filter>
+    </defs>
+
+    <path class="WS-process__base-path"></path>
+
+    <path class="WS-process__active-path"></path>
+
+    <circle
+      class="WS-process__energy WS-process__energy--one"
+      r="5"
+    ></circle>
+
+    <circle
+      class="WS-process__energy WS-process__energy--two"
+      r="3.5"
+    ></circle>
+
+    <circle
+      class="WS-process__energy WS-process__energy--three"
+      r="2.5"
+    ></circle>
+  </svg>
+
+  <div class="WS-process__steps">
+
+    <article class="WS-process__step">
+      <div class="WS-process__node">
+        <span class="WS-process__pulse"></span>
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-3.8-3.8"></path>
+          <path d="M11 6v2"></path>
+          <path d="M6 11h2"></path>
+        </svg>
       </div>
-    </div>
 
-    <!-- Left Section -->
-    <div class="left">
-      <h3>Skill Overview</h3>
-      <section class="metrics" id="metrics">
-      <!-- Website design experience --> 
-       <article class="card reveals slide-right" aria-labelledby="m1-title"> 
-        <div class="icon" aria-hidden="true"> 
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 4l3.5 16L11 6l3 14L21 4" stroke="url(#g)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <defs>
-            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0" stop-color="#ff5f6d"/> <stop offset="1" stop-color="#ffc371"/>
-            </linearGradient>
-          </defs></svg> 
-        </div>
-        <div class="meta"> <div class="num" data-target="90" data-format="int" data-suffix="%" id="m1">0
-          <span class="suffix">%</span></div> <div class="label" id="m1-title"> Organized & Adaptable</div> 
-        </div> 
-      </article> 
-      <!-- Customer service & hospitality --> 
-       <article class="card reveals slide-right" aria-labelledby="m7-title"> 
-          <div class="icon" aria-hidden="true"> 
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 7h16M4 12h16M4 17h16" stroke="url(#g7)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <defs>
-                  <linearGradient id="g7" x1="0" x2="1" y1="0" y2="1">
-                    <stop offset="0" stop-color="#facc15"/>
-                    <stop offset="1" stop-color="#f59e0b"/>
-                  </linearGradient>
-                </defs></svg></div> 
-                <div class="meta"> 
-                  <div class="num" data-target="12" data-format="int" data-suffix="yrs" id="m7">0<span class="suffix">yrs</span></div> 
-                  <div class="label" id="m7-title">Of Continuous Learning & Growth</div> 
-                </div> 
-        </article> 
-      <!-- Digital design projects --> 
-       <article class="card reveals slide-right" aria-labelledby="m8-title"> 
-        <div class="icon" aria-hidden="true"> 
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path d="M12 2l9 4-9 4-9-4 9-4zm0 8l9 4-9 4-9-4 9-4zm0 8l9 4-9 4-9-4 9-4z" stroke="url(#g8)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs>
-              <linearGradient id="g8" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#ec4899"/>
-                <stop offset="1" stop-color="#f43f5e"/>
-              </linearGradient></defs></svg> </div> 
-            <div class="meta"> 
-              <div class="num" data-target="15" data-format="int" data-suffix="+" id="m8">0<span class="suffix">+</span></div> 
-              <div class="label" id="m8-title">Project Participated on</div> 
-            </div> </article> 
-      <!-- Customer satisfaction --> 
-       <article class="card reveals slide-right" aria-labelledby="m2-title"> 
-        <div class="icon" aria-hidden="true"> 
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2v20M2 12h20" stroke="url(#g2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs>
-            <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0" stop-color="#6ee7b7"/><stop offset="1" stop-color="#34d399"/>
-            </linearGradient>
-          </defs></svg> 
-        </div> <div class="meta"> 
-          <div class="num" data-target="95" data-format="percent" id="m2">0%</div> 
-          <div class="label" id="m2-title">Customer Communication Skill</div> </div> 
-        </article> 
-        <!-- Quick response time --> 
-         <article class="card reveals slide-right" aria-labelledby="m3-title"> 
-          <div class="icon" aria-hidden="true"> 
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 6v6l4 2" stroke="url(#g3)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              <defs>
-                <linearGradient id="g3" x1="0" x2="1" y1="0" y2="1">
-                  <stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#7c3aed"/>
-                </linearGradient></defs>
-              </svg> </div> 
-              <div class="meta"> 
-                <div class="num" data-target="98" data-format="percent" id="m3">0%</div> 
-                <div class="label" id="m3-title">Time & Detail Oriented</div> </div> 
-              </article> 
-        <!-- Firms worked for --> 
-          <article class="card reveals slide-right" aria-labelledby="m4-title"> <div class="icon" aria-hidden="true"> 
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 7h18v10H3zM7 11h2v2H7z" stroke="url(#g4)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              <defs><linearGradient id="g4" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#f97316"/>
-                <stop offset="1" stop-color="#fb7185"/></linearGradient>
-              </defs></svg> 
-            </div> <div class="meta"> 
-              <div class="num" data-target="20" data-format="int" data-suffix="+" id="m4">0<span class="suffix">+</span></div> 
-              <div class="label" id="m8-title">Projects Completed</div> </div> 
-            </article> 
-       <!-- Team collaboration --> 
-        <article class="card reveals slide-right" aria-labelledby="m5-title"> 
-          <div class="icon" aria-hidden="true"> 
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" stroke="url(#g5)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs>
-              <linearGradient id="g5" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#0ea5e9"/>
-              </linearGradient></defs></svg> 
-            </div> <div class="meta"> 
-              <div class="num" data-target="80" data-format="percent" id="m5">0%</div> 
-              <div class="label" id="m5-title">Team collaboration</div> </div> 
-            </article> 
-            <!-- Adaptability --> 
-             <article class="card reveals slide-right" aria-labelledby="m6-title"> 
-              <div class="icon" aria-hidden="true"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 4h16v16H4zM9 9h6v6H9z" stroke="url(#g6)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <defs>
-                  <linearGradient id="g6" x1="0" x2="1" y1="0" y2="1">
-                    <stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
-                  </defs></svg> </div> 
-                  <div class="meta"> <div class="num" data-target="95" data-format="percent" id="m6">0%</div> 
-                  <div class="label" id="m6-title">Adaptability & Flexibility</div> </div> 
-            </article>
-     
-     </section>
+      <h3>Discover</h3>
+    </article>
 
-    </div>
+    <article class="WS-process__step">
+      <div class="WS-process__node">
+        <span class="WS-process__pulse"></span>
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+          <path d="M9 3.5h6"></path>
+          <path d="m8 10 1.5 1.5L12 9"></path>
+          <path d="M14 10h2"></path>
+          <path d="m8 16 1.5 1.5L12 15"></path>
+          <path d="M14 16h2"></path>
+        </svg>
+      </div>
+
+      <h3>Plan</h3>
+    </article>
+
+    <article class="WS-process__step">
+      <div class="WS-process__node">
+        <span class="WS-process__pulse"></span>
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 20h9"></path>
+          <path
+            d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z"
+          ></path>
+          <path d="m14.5 5.5 3 3"></path>
+        </svg>
+      </div>
+
+      <h3>Design</h3>
+    </article>
+
+    <article class="WS-process__step">
+      <div class="WS-process__node">
+        <span class="WS-process__pulse"></span>
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m8 9-4 3 4 3"></path>
+          <path d="m16 9 4 3-4 3"></path>
+          <path d="m14 5-4 14"></path>
+        </svg>
+      </div>
+
+      <h3>Build</h3>
+    </article>
+
+    <article class="WS-process__step">
+      <div class="WS-process__node">
+        <span class="WS-process__pulse"></span>
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 12a9 9 0 0 1 15.5-6.2"></path>
+          <path d="M18 2v5h-5"></path>
+          <path d="M21 12a9 9 0 0 1-15.5 6.2"></path>
+          <path d="M6 22v-5h5"></path>
+        </svg>
+      </div>
+
+      <h3>Refine</h3>
+    </article>
+
   </div>
 </div>
+            </div>
+          </article>
+        </div>
+
+        <blockquote class="MAIIN-ABOUT__quote">
+          <span>“</span>
+          <p>I believe that whether I'm designing a digital product or assisting a customer in person, 
+            the goal is the same: <strong>make someone's experience easier,</strong>
+            <strong>clearer,</strong>
+             and more
+            <strong> enjoyable</strong></p>
+        </blockquote>
+      </div>
+</section>
+
+    
+
+<!--
+  SKILLS + CERTIFICATES SECTION
+
+-->
+<section class="SC-section" aria-label="Skills and certificates" id="skills">
+  <div class="SC-bg-orb SC-bg-orb--one" aria-hidden="true"></div>
+  <div class="SC-bg-orb SC-bg-orb--two" aria-hidden="true"></div>
+  <div class="SC-grid-lines" aria-hidden="true"></div>
+  <div class="SC-wave SC-wave--one" aria-hidden="true"></div>
+  <div class="SC-wave SC-wave--two" aria-hidden="true"></div>
+
+  <div class="SC-shell">
+    <div class="SC-tabs" role="tablist" aria-label="Skills and certificates tabs">
+      <button class="SC-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="SC-skills-panel" id="SC-skills-tab">
+        <span class="SC-tab-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></span>
+        Skills
+      </button>
+
+      <button class="SC-tab" type="button" role="tab" aria-selected="false" aria-controls="SC-certificates-panel" id="SC-certificates-tab">
+        <span class="SC-tab-icon" aria-hidden="true"><i class="fa-solid fa-award"></i></span>
+        Certificates
+      </button>
+    </div>
+
+    <div class="SC-layout">
+      <!-- SKILLS -->
+      <section class="SC-panel SC-skills-panel is-visible" id="SC-skills-panel" role="tabpanel" aria-labelledby="SC-skills-tab">
+       
+       
+        <div class="SC-card SC-skills-card">
+          <article class="SC-skill" style="--SC-level: 90%">
+            <div class="SC-skill-icon" aria-hidden="true">&lt;/&gt;</div>
+            <div class="SC-skill-content">
+              <div class="SC-skill-top">
+                <div>
+                  <h3>Web Design</h3>
+                  <p>HTML, CSS, JavaScript, Responsive Design</p>
+                </div>
+                <strong>90%</strong>
+              </div>
+              <div class="SC-progress"><span></span></div>
+            </div>
+          </article>
+
+          <article class="SC-skill" style="--SC-level: 85%">
+            <div class="SC-skill-icon" aria-hidden="true">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+            <div class="SC-skill-content">
+              <div class="SC-skill-top">
+                <div>
+                  <h3>Office Assistance</h3>
+                  <p>Ms Word, Spreadsheet, Data Entry, Softwares and Hardware</p>
+                </div>
+                <strong>85%</strong>
+              </div>
+              <div class="SC-progress"><span></span></div>
+            </div>
+          </article>
+
+          <article class="SC-skill" style="--SC-level: 88%">
+            <div class="SC-skill-icon" aria-hidden="true">
+              <i class="fa-regular fa-comments"></i>
+            </div>
+            <div class="SC-skill-content">
+              <div class="SC-skill-top">
+                <div>
+                  <h3>Communication</h3>
+                  <p>Active Listening, Empathy, Clarity</p>
+                </div>
+                <strong>88%</strong>
+              </div>
+              <div class="SC-progress"><span></span></div>
+            </div>
+          </article>
+
+          <article class="SC-skill" style="--SC-level: 92%">
+            <div class="SC-skill-icon" aria-hidden="true">●●●</div>
+            <div class="SC-skill-content">
+              <div class="SC-skill-top">
+                <div>
+                  <h3>Customer Service</h3>
+                  <p>Problem Solving, Patience, Support</p>
+                </div>
+                <strong>92%</strong>
+              </div>
+              <div class="SC-progress"><span></span></div>
+            </div>
+          </article>
+
+          <article class="SC-skill" style="--SC-level: 80%">
+            <div class="SC-skill-icon" aria-hidden="true">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div class="SC-skill-content">
+              <div class="SC-skill-top">
+                <div>
+                  <h3>Community Service</h3>
+                  <p>Planning, Organization, Teamwork, Public Relation</p>
+                </div>
+                <strong>80%</strong>
+              </div>
+              <div class="SC-progress"><span></span></div>
+            </div>
+          </article>
+        </div>
+
+
+        <aside class="SC-card SC-contribution-card">
+
+          <div class="SC-contribution-header">
+            <span class="SC-contribution-kicker">Professional Network</span>
+            <h3>Organizations I’ve Contributed To</h3>
+            <p>Teams, communities and institutions where I have supported projects, service and growth.</p>
+          </div>
+
+          <div class="SC-organization-grid">
+
+            <article class="SC-organization-item">
+              <div class="SC-organization-icon">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div>
+                <strong>Obramat</strong>
+                <span>Retail Internship</span>
+              </div>
+            </article>
+
+            <article class="SC-organization-item">
+              <div class="SC-organization-icon">
+               <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <div>
+                <strong>Santa Casa</strong>
+                <span>Professional Training</span>
+              </div>
+            </article>
+
+            <article class="SC-organization-item">
+              <div class="SC-organization-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div>
+                <strong>Lisbon Project</strong>
+                <span>Community Support</span>
+              </div>
+            </article>
+
+            <article class="SC-organization-item">
+              <div class="SC-organization-icon">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <div>
+                <strong>Renovar Mouraria</strong>
+                <span>Event Volunteering</span>
+              </div>
+            </article>
+
+          </div>
+
+<div class="SC-people-block SC-people-block--desktop">
+
+  <div class="SC-people-title">
+    <span>People I’ve Worked With</span>
+    <small>Collaboration across different environments</small>
+  </div>
+
+  <div class="SC-people-stack" aria-label="People I have worked with">
+
+    <div class="SC-person-avatar">
+      <img src="jose.jpg" alt="José Rosa">
+    </div>
+
+    <div class="SC-person-avatar">
+      <img src="cladio.jpg" alt="Cláudio">
+    </div>
+
+    <div class="SC-person-avatar">
+      <img src="teresa.jpg" alt="Teresa">
+    </div>
+
+    <div class="SC-person-avatar">
+      <img src="celia.jpg" alt="Célia">
+    </div>
+
+    <div class="SC-person-avatar SC-person-avatar-more">
+      +
+    </div>
+
+  </div>
+
+  <p class="SC-people-copy">
+    Trainers, supervisors, support professionals, volunteers and
+    multidisciplinary teams.
+  </p>
+
+  <button
+    class="SC-people-reference-button"
+    type="button"
+  >
+    <span>See References</span>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  </button>
+
+</div>
+
+          <div class="SC-contribution-footer">
+            <div>
+              <strong>Team-focused</strong>
+              <span>Reliable collaboration</span>
+            </div>
+
+            <div>
+              <strong>Adaptable</strong>
+              <span>Different work environments</span>
+            </div>
+          </div>
+
+        </aside>
+        
+      </section>
+      
+      <!-- CERTIFICATES -->
+      <section class="SC-panel SC-certificates-panel" id="SC-certificates-panel" role="tabpanel" aria-labelledby="SC-certificates-tab" hidden>
+        <div class="SC-card SC-certificate-card">
+          <div class="SC-certificate-heading">
+            <div class="SC-award-icon" aria-hidden="true">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div>
+              <h3>My Certificates</h3>
+              <p>Click any certificate to preview</p>
+            </div>
+          </div>
+
+          <div class="SC-certificate-workspace">
+            <div class="SC-certificate-list" role="list" aria-label="Certificate list">
+              <button class="SC-certificate-item is-selected" type="button"
+                data-title="Google IT Support Professional Certificate"
+                data-date="February 2026"
+                data-issuer="Google Career Certificates"
+                data-image="certificate1.jpg"
+                data-download="#">
+                <span class="SC-certificate-thumb">
+                  <img src="certificate1.jpg" alt="">
+                </span>
+                <span class="SC-certificate-copy">
+                  <strong>Google IT Support Professional Certificate</strong>
+                  <small>Feb 2026</small>
+                </span>
+              </button>
+
+              <button class="SC-certificate-item" type="button"
+                data-title="UI/UX Design Fundamentals"
+                data-date="November 2025"
+                data-issuer="Design Academy"
+                data-image="https://placehold.co/1200x850/f8fafc/111827?text=UI%2FUX+Design+Certificate"
+                data-download="#">
+                <span class="SC-certificate-thumb">
+                  <img src="https://placehold.co/230x150/f8fafc/111827?text=UI%2FUX" alt="">
+                </span>
+                <span class="SC-certificate-copy">
+                  <strong>UI/UX Design Fundamentals</strong>
+                  <small>Nov 2025</small>
+                </span>
+              </button>
+
+              <button class="SC-certificate-item" type="button"
+                data-title="Responsive Web Design"
+                data-date="October 2025"
+                data-issuer="freeCodeCamp"
+                data-image="https://placehold.co/1200x850/f8fafc/111827?text=Responsive+Web+Design"
+                data-download="#">
+                <span class="SC-certificate-thumb">
+                  <img src="https://placehold.co/230x150/f8fafc/111827?text=Responsive+Web" alt="">
+                </span>
+                <span class="SC-certificate-copy">
+                  <strong>Responsive Web Design</strong>
+                  <small>Oct 2025</small>
+                </span>
+              </button>
+
+              <button class="SC-certificate-item" type="button"
+                data-title="Customer Service Excellence"
+                data-date="August 2025"
+                data-issuer="Professional Learning Institute"
+                data-image="https://placehold.co/1200x850/f8fafc/111827?text=Customer+Service+Certificate"
+                data-download="#">
+                <span class="SC-certificate-thumb">
+                  <img src="https://placehold.co/230x150/f8fafc/111827?text=Customer+Service" alt="">
+                </span>
+                <span class="SC-certificate-copy">
+                  <strong>Customer Service Excellence</strong>
+                  <small>Aug 2025</small>
+                </span>
+              </button>
+
+              <button class="SC-certificate-item" type="button"
+                data-title="JavaScript Essentials"
+                data-date="July 2025"
+                data-issuer="Web Skills Academy"
+                data-image="https://placehold.co/1200x850/f8fafc/111827?text=JavaScript+Essentials"
+                data-download="#">
+                <span class="SC-certificate-thumb">
+                  <img src="https://placehold.co/230x150/f8fafc/111827?text=JavaScript" alt="">
+                </span>
+                <span class="SC-certificate-copy">
+                  <strong>JavaScript Essentials</strong>
+                  <small>Jul 2025</small>
+                </span>
+              </button>
+            </div>
+
+            <div class="SC-preview-column">
+              <div class="SC-preview-frame" aria-live="polite">
+                <div class="SC-preview-loader" aria-hidden="true"></div>
+                <img class="SC-preview-image"
+                  src="certificate1.jpg"
+                  alt="Preview of Google IT Support Professional Certificate">
+                <div class="SC-preview-shine" aria-hidden="true"></div>
+              </div>
+
+              <div class="SC-preview-details">
+                <div>
+                  <strong class="SC-preview-title">Google IT Support Professional Certificate</strong>
+                  <span class="SC-preview-meta">Google Career Certificates · February 2026</span>
+                </div>
+
+                <div class="SC-preview-actions">
+                  <a class="SC-action SC-download" href="" download>
+                    <span aria-hidden="true">↓</span>
+                    Download
+                  </a>
+                  <button class="SC-action SC-open" type="button" aria-label="Open certificate preview in a new tab">
+                    ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </div>
+  </div>
+
+
+  <!-- MOBILE PEOPLE CARD -->
+<div class="SC-card SC-people-block SC-people-block--mobile">
+
+  <div class="SC-people-title">
+    <span>People I’ve Worked With</span>
+    <small>Collaboration across different environments</small>
+  </div>
+
+  <div class="SC-people-stack" aria-label="People I have worked with">
+
+    <div class="SC-person-avatar">
+      <img src="jose.jpg" alt="José Rosa">
+    </div>
+
+    <div class="SC-person-avatar">
+      <img src="cladio.jpg" alt="Cláudio">
+    </div>
+
+    <div class="SC-person-avatar">
+      <img src="teresa.jpg" alt="Teresa">
+    </div>
+
+    <div class="SC-person-avatar">
+      <img src="celia.jpg" alt="Célia">
+    </div>
+
+    <div class="SC-person-avatar SC-person-avatar-more">
+      +
+    </div>
+
+  </div>
+
+  <p class="SC-people-copy">
+    Trainers, supervisors, support professionals, volunteers and
+    multidisciplinary teams.
+  </p>
+
+  <button
+    class="SC-people-reference-button"
+    type="button"
+  >
+    <span>See References</span>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  </button>
+
+</div>
+  <!-- Fullscreen preview -->
+  <dialog class="SC-dialog" aria-label="Certificate fullscreen preview">
+    <button class="SC-dialog-close" type="button" aria-label="Close preview">×</button>
+    <img class="SC-dialog-image" src="" alt="">
+    <div class="SC-dialog-caption"></div>
+  </dialog>
 
 
 
+  <div
+  class="SC-references-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="SC-references-modal-title"
+  hidden
+>
+
+  <div class="SC-references-modal-backdrop"></div>
+
+  <div class="SC-references-modal-container">
+
+    <button
+      class="SC-references-modal-close"
+      type="button"
+      aria-label="Close references"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="SC-references-modal-header">
+
+      <span class="SC-references-modal-kicker">
+        Professional Network
+      </span>
+
+      <h2 id="SC-references-modal-title">
+        Professional References
+      </h2>
+
+      <p>
+        Supervisors, trainers and coordinators I have worked with
+        across professional and community environments.
+      </p>
+
+    </div>
+
+    <div class="SC-references-modal-list">
+
+      <!-- REFERENCE 1 -->
+      <article class="SC-modal-reference-card">
+
+        <div class="SC-modal-reference-person">
+
+          <div class="SC-modal-reference-photo-wrap">
+
+            <img
+              src="jose.jpg"
+              alt="José Rosa"
+              class="SC-modal-reference-photo"
+            >
+
+            <span class="SC-modal-reference-company-icon">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </span>
+
+          </div>
+
+          <div class="SC-modal-reference-identity">
+            <strong>José Rosa</strong>
+            <span>Professional Trainer</span>
+            <small>Santa Casa</small>
+          </div>
+
+        </div>
+
+        <p class="SC-modal-reference-description">
+          Trainer and course supervisor during my professional
+          carpentry and workplace training.
+        </p>
+
+        <div class="SC-modal-reference-contacts">
+
+          <a href="mailto:email@example.com">
+            <i class="fa-solid fa-envelope"></i>
+
+            <div>
+              <small>Email</small>
+              <strong>email@example.com</strong>
+            </div>
+          </a>
+
+          <a href="tel:+351000000000">
+            <i class="fa-solid fa-phone"></i>
+
+            <div>
+              <small>Phone</small>
+              <strong>+351 000 000 000</strong>
+            </div>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- REFERENCE 2 -->
+      <article class="SC-modal-reference-card">
+
+        <div class="SC-modal-reference-person">
+
+          <div class="SC-modal-reference-photo-wrap">
+
+            <img
+              src="cladio.jpg"
+              alt="Cláudio"
+              class="SC-modal-reference-photo"
+            >
+
+            <span class="SC-modal-reference-company-icon">
+              <i class="fa-solid fa-store"></i>
+            </span>
+
+          </div>
+
+          <div class="SC-modal-reference-identity">
+            <strong>Cláudio</strong>
+            <span>Workplace Supervisor</span>
+            <small>Obramat</small>
+          </div>
+
+        </div>
+
+        <p class="SC-modal-reference-description">
+          Workplace supervisor during my retail internship,
+          customer service and stock-support experience.
+        </p>
+
+        <div class="SC-modal-reference-contacts">
+
+          <a href="mailto:email@example.com">
+            <i class="fa-solid fa-envelope"></i>
+
+            <div>
+              <small>Email</small>
+              <strong>email@example.com</strong>
+            </div>
+          </a>
+
+          <a href="tel:+351000000000">
+            <i class="fa-solid fa-phone"></i>
+
+            <div>
+              <small>Phone</small>
+              <strong>+351 000 000 000</strong>
+            </div>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- REFERENCE 3 -->
+      <article class="SC-modal-reference-card">
+
+        <div class="SC-modal-reference-person">
+
+          <div class="SC-modal-reference-photo-wrap">
+
+            <img
+              src="teresa.jpg"
+              alt="Teresa"
+              class="SC-modal-reference-photo"
+            >
+
+            <span class="SC-modal-reference-company-icon">
+              <i class="fa-solid fa-people-group"></i>
+            </span>
+
+          </div>
+
+          <div class="SC-modal-reference-identity">
+            <strong>Teresa</strong>
+            <span>Support Coordinator</span>
+            <small>Santa Casa</small>
+          </div>
+
+        </div>
+
+        <p class="SC-modal-reference-description">
+          Support professional who worked with me during my training,
+          development and integration activities.
+        </p>
+
+        <div class="SC-modal-reference-contacts">
+
+          <a href="mailto:email@example.com">
+            <i class="fa-solid fa-envelope"></i>
+
+            <div>
+              <small>Email</small>
+              <strong>email@example.com</strong>
+            </div>
+          </a>
+
+          <a href="tel:+351000000000">
+            <i class="fa-solid fa-phone"></i>
+
+            <div>
+              <small>Phone</small>
+              <strong>+351 000 000 000</strong>
+            </div>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- REFERENCE 4 -->
+      <article class="SC-modal-reference-card">
+
+        <div class="SC-modal-reference-person">
+
+          <div class="SC-modal-reference-photo-wrap">
+
+            <img
+              src="celia.jpg"
+              alt="Célia"
+              class="SC-modal-reference-photo"
+            >
+
+            <span class="SC-modal-reference-company-icon">
+              <i class="fa-solid fa-users"></i>
+            </span>
+
+          </div>
+
+          <div class="SC-modal-reference-identity">
+            <strong>Célia</strong>
+            <span>Training Collaborator</span>
+            <small>Santa Casa</small>
+          </div>
+
+        </div>
+
+        <p class="SC-modal-reference-description">
+          Collaborator and support professional involved in my
+          training and professional development experience.
+        </p>
+
+        <div class="SC-modal-reference-contacts">
+
+          <a href="mailto:email@example.com">
+            <i class="fa-solid fa-envelope"></i>
+
+            <div>
+              <small>Email</small>
+              <strong>email@example.com</strong>
+            </div>
+          </a>
+
+          <a href="tel:+351000000000">
+            <i class="fa-solid fa-phone"></i>
+
+            <div>
+              <small>Phone</small>
+              <strong>+351 000 000 000</strong>
+            </div>
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+    <p class="SC-references-modal-permission">
+     <b style="color: rgb(206, 203, 203);">please Note:</b> Contact Details Are Strictly Only For Referral Purposes. 
+    Clarify The Reason For Your Inquiry And Be Respectful.
+    </p>
+
+  </div>
+
+</div>
+</section>
+
+
+
+<!-- EXPERIENCE SECTION -->
+  <section class="Exper2-section" id="experience" aria-labelledby="Exper2-title">
+
+  <div class="Exper2-container">
+
+    <div class="Exper2-top Exper2-reveal">
+
+      <div class="Exper2-heading">
+        <span class="Exper2-eyebrow">
+          <span class="Exper2-eyebrow-dot"></span>
+          MY JOURNEY
+        </span>
+
+        <h2 id="Exper2-title">My <span>Experience</span></h2>
+
+        <p>
+          A journey shaped by challenges, growth, creativity and meaningful
+          experiences across different roles.
+        </p>
+
+        <span class="Exper2-heading-line" aria-hidden="true"></span>
+      </div>
+
+      <div class="Exper2-stats" aria-label="Professional statistics">
+        <article class="Exper2-stat" data-count="4" data-suffix="+">
+          <span class="Exper2-stat-icon"><i class="fa-solid fa-briefcase"></i></span>
+          <strong class="Exper2-counter">0+</strong>
+          <span>Years<br>Experience</span>
+        </article>
+
+        <article class="Exper2-stat" data-count="120" data-suffix="+">
+          <span class="Exper2-stat-icon2"><i class="fa-solid fa-rocket"></i></span>
+          <strong class="Exper2-counter">0+</strong>
+          <span>Projects<br>Completed</span>
+        </article>
+
+        <article class="Exper2-stat" data-count="12" data-suffix="+">
+          <span class="Exper2-stat-icon"><i class="fa-solid fa-code"></i></span>
+          <strong class="Exper2-counter">0+</strong>
+          <span>Technologies<br>Mastered</span>
+        </article>
+
+        <article class="Exper2-stat" data-count="95" data-suffix="%">
+          <span class="Exper2-stat-icon2"><i class="fa-regular fa-face-smile"></i></span>
+          <strong class="Exper2-counter">0%</strong>
+          <span>Client<br>Satisfaction</span>
+        </article>
+      </div>
+  </div>
+
+      <div class="exper2-All">
+
+    <div class="Exper2-left">
+      <div class="Exper2-workspace">
+    <aside class="Exper2-timeline" aria-label="Experience timeline">
+      <span class="Exper2-timeline-track" aria-hidden="true"></span>
+      <span class="Exper2-timeline-progress" aria-hidden="true"></span>
+      <button class="Exper2-time is-active" data-card="Exper2-role-1"><span class="Exper2-year">2024 - Present</span><span class="Exper2-node"></span></button>
+      <button class="Exper2-time" data-card="Exper2-role-2"><span class="Exper2-year">2023 - 2024</span><span class="Exper2-node"></span></button>
+      <button class="Exper2-time" data-card="Exper2-role-3"><span class="Exper2-year">2022 - 2023</span><span class="Exper2-node"></span></button>
+      <button class="Exper2-time" data-card="Exper2-role-4"><span class="Exper2-year">2020 - 2022</span><span class="Exper2-node"></span></button>
+    </aside>
+
+    <main class="Exper2-list">
+      <article class="Exper2-card is-open" id="Exper2-role-1">
+        <button class="Exper2-card-head" aria-expanded="true">
+          <span class="Exper2-logo Exper2-logo--brand">
+            <img src="BEMS.png" alt="">
+          </span>
+          <span class="Exper2-card-title">
+            <small class="Exper2-current">CURRENT ROLE</small>
+            <strong>Frontend Developer</strong>
+            <span>SolutionConst
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </span>
+            <span class="Exper2-card-skills Exper2-card-skills--red">
+            <span>Customer Service</span>
+            <span>POS Systems</span>
+            <span>Inventory</span>
+            <span>Teamwork</span>
+          </span>
+            <span class="Exper2-toggle Exper2-toggle">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </button>
+
+        <div class="Exper2-card-body">
+          <div class="Exper2-card-body-inner">
+            <div class="Exper2-role-copy">
+              <p>Building modern, responsive and high-performance websites and web applications that deliver exceptional user experiences.</p>
+              <ul>
+                <li>Developed 15+ responsive websites and web applications using modern technologies.</li>
+                <li>Improved website performance by 40% through optimization and best practices.</li>
+                <li>Collaborated with clients to understand requirements and deliver tailor-made solutions.</li>
+              </ul>
+              <a class="Exper2-details-link" href="#">View Details <span>→</span></a>
+            </div>
+            <div class="Exper2-tech-panel">
+              <h3><span></span>TECHNOLOGIES</h3>
+              <div class="Exper2-tech-grid">
+                <span><i class="fa-brands fa-html5"></i><b>HTML5</b></span><span><i class="fa-brands fa-css3-alt"></i><b>CSS3</b></span><span><i class="fa-brands fa-js"></i><b>JavaScript</b></span><span><i class="fa-brands fa-react"></i><b>React</b></span>
+                <span><i class="fa-solid fa-n"></i><b>Next.js</b></span><span><i class="fa-solid fa-water"></i><b>Tailwind</b></span><span><i class="fa-solid fa-person-running"></i><b>GSAP</b></span><span><i class="fa-brands fa-wordpress"></i><b>WordPress</b></span>
+                <span><i class="fa-brands fa-git-alt"></i><b>Git</b></span><span><i class="fa-brands fa-figma"></i><b>Figma</b></span><span><i class="fa-solid fa-code"></i><b>TypeScript</b></span><span><i class="fa-brands fa-sass"></i><b>Sass</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="Exper2-card" id="Exper2-role-2">
+        <button class="Exper2-card-head" aria-expanded="false">
+          <span class="Exper2-logo Exper2-logo--navy">
+            <img src="obramart.png" alt="">
+          </span>
+          <span class="Exper2-card-title">
+            <small class="Exper2-date">2023 - 2024</small>
+            <strong>Retail Intern</strong>
+            <span>Obramat Portugal <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </span>
+          <span class="Exper2-card-skills">
+            <span>Customer Service</span>
+            <span>POS Systems</span>
+            <span>Inventory</span>
+            <span>Teamwork</span>
+          </span>
+          <span class="Exper2-toggle Exper2-toggle--navy">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </button>
+        <div class="Exper2-card-body">
+          <div class="Exper2-card-body-inner">
+            <div class="Exper2-role-copy">
+              <p>Supported customers and daily retail operations in a fast-paced home-improvement environment.</p>
+              <ul>
+                <li>Assisted customers in locating products and understanding product options.</li>
+                <li>Replenished stock and maintained organised, safe retail areas.</li>
+                <li>Collaborated across departments to support efficient daily operations.</li>
+              </ul>
+            </div>
+            <div class="Exper2-tech-panel">
+              <h3><span></span>CORE SKILLS</h3>
+              <div class="Exper2-tech-grid text">
+                <span>Customer Care</span>
+                <span>Communication</span>
+                <span>Stock Handling</span>
+                <span>Merchandising</span>
+                <span>Safety</span>
+                <span>Team Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="Exper2-card" id="Exper2-role-3">
+        <button class="Exper2-card-head" aria-expanded="false">
+          <span class="Exper2-logo Exper2-logo--red">
+            <img src="shoprite.png" alt="">
+          </span>
+          <span class="Exper2-card-title">
+            <small class="Exper2-date Exper2-date--red">2022 - 2023</small>
+            <strong>Customer Service Representative</strong>
+            <span>ShopRite<i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </span>
+          <span class="Exper2-card-skills Exper2-card-skills--red">
+            <span>Communication</span>
+            <span>Problem Solving</span>
+            <span>CRM</span>
+            <span>Support</span>
+          </span>
+          <span class="Exper2-toggle">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </button>
+        <div class="Exper2-card-body">
+          <div class="Exper2-card-body-inner">
+            <div class="Exper2-role-copy">
+              <p>Delivered friendly customer support while helping maintain fast and accurate service.</p>
+              <ul>
+                <li>Handled customer questions, requests and complaints professionally.</li>
+                <li>Supported high-volume order processing and service coordination.</li>
+                <li>Helped create positive customer experiences and repeat visits.</li>
+              </ul>
+            </div>
+            <div class="Exper2-tech-panel">
+              <h3><span></span>CORE SKILLS</h3>
+              <div class="Exper2-tech-grid text">
+                <span>CRM</span>
+                <span>Order Support</span>
+                <span>Communication</span>
+                <span>Resolution</span>
+                <span>Service Quality</span>
+                <span>Teamwork</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="Exper2-card" id="Exper2-role-4">
+        <button class="Exper2-card-head" aria-expanded="false">
+          <span class="Exper2-logo Exper2-logo--navy">
+            <img src="Dechoice.png" alt="">
+          </span>
+          <span class="Exper2-card-title">
+            <small class="Exper2-date">2020 - 2022</small>
+            <strong>Restaurant Server</strong>
+            <span> Dechoice Restaurant <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </span>
+          <span class="Exper2-card-skills">
+            <span>Time Management</span>
+            <span>Hospitality</span>
+            <span>Teamwork</span>
+            <span>Leadership</span>
+          </span>
+          <span class="Exper2-toggle Exper2-toggle--navy">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </button>
+        <div class="Exper2-card-body">
+          <div class="Exper2-card-body-inner">
+            <div class="Exper2-role-copy">
+              <p>Provided welcoming table service while maintaining accuracy and speed during busy shifts.</p>
+              <ul>
+                <li>Managed 50+ food and beverage orders per shift.</li>
+                <li>Delivered professional service to 40+ guests daily.</li>
+                <li>Maintained strong hygiene standards and coordinated with kitchen staff.</li>
+              </ul>
+            </div>
+            <div class="Exper2-tech-panel">
+              <h3><span></span>CORE SKILLS</h3>
+              <div class="Exper2-tech-grid text">
+                <span>Table Service</span>
+                <span>Order Accuracy</span>
+                <span>POS</span>
+                <span>Food Safety</span>
+                <span>Upselling</span>
+                <span>Guest Care</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+      </div>
+    </div>
+
+    <div class="Exper2-right">
+      <div class="Exper2-visual-wrapper">
+
+        <section class="Exper2-visual" aria-label="Developer illustration">
+          
+          <div class="Exper2-inner">
+            <div class="Exper2-dot-pattern Exper2-dot-pattern--top" aria-hidden="true"></div>
+            <div class="Exper2-dot-pattern Exper2-dot-pattern--bottom" aria-hidden="true"></div>
+
+      <svg
+        class="Exper2-flight"
+        viewBox="0 0 500 520"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <g class="Exper2-flight-group">
+
+          <path
+            class="Exper2-flight-path"
+            d="
+              M 5 490
+              C -20 390, 40 340, 128 345
+              C 260 350, 320 310, 315 225
+              C 310 175, 250 177, 255 222
+              C 260 268, 343 255, 368 178
+              C 382 135, 403 104, 440 74
+            "
+          />
+
+          <!-- Keeps the plane fixed to the end of the line -->
+          <g
+            class="Exper2-plane-position"
+            transform="translate(440 74) rotate(-25)"
+          >
+            <!-- This inner group handles only the small animation -->
+            <g class="Exper2-plane">
+
+              <circle
+                class="Exper2-plane-background"
+                cx="0"
+                cy="0"
+                r="34"
+              />
+
+              <path
+                class="Exper2-plane-paper"
+                d="
+                  M -25 -8
+                  L 27 -23
+                  L 8 28
+                  L -3 8
+                  L -15 18
+                  L -9 3
+                  Z
+                "
+              />
+
+              <path
+                class="Exper2-plane-fold"
+                d="M -21 -7 L -3 8 L 25 -21"
+              />
+
+              <path
+                class="Exper2-plane-fold"
+                d="M -3 8 L 8 27"
+              />
+
+            </g>
+          </g>
+
+        </g>
+      </svg>
+            <span class="Exper2-floating-dot Exper2-floating-dot--red-one" aria-hidden="true"></span>
+            <span class="Exper2-floating-dot Exper2-floating-dot--red-two" aria-hidden="true"></span>
+            <span class="Exper2-floating-dot Exper2-floating-dot--blue-one" aria-hidden="true"></span>
+            <span class="Exper2-floating-dot Exper2-floating-dot--blue-two" aria-hidden="true"></span>
+
+            <div class="Exper2-avatar-area">
+              <div class="Exper2-avatar-glow" aria-hidden="true"></div>
+              
+              <div class="Exper2-avatar-image">
+              
+                <img src="dripping.png">
+              
+              </div>
+            </div>
+
+            <article class="Exper2-learning-card">
+              <div class="Exper2-learning-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M38 11 C46 7 53 8 56 8 C56 13 55 21 50 27 L39 38 L27 26 L38 11Z" stroke="#ff2439" stroke-width="4" stroke-linejoin="round" />
+                  <circle cx="43" cy="20" r="4" stroke="#ff2439" stroke-width="4" />
+                  <path d="M27 26L18 28L11 36L25 37" stroke="#ff2439" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M39 38L37 48L29 55L28 41" stroke="#ff2439" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20 43C15 44 11 48 10 54C16 53 20 50 21 46" stroke="#ff2439" stroke-width="4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="Exper2-learning-content">
+                <h2 class="Exper2-learning-title">Always learning.<br />Always <span>growing.</span></h2>
+                <p class="Exper2-learning-description">I believe in continuous improvement and staying up-to-date with the latest technologies to build better solutions.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+  </div>
+
+    <p class="Exper2-footer Exper2-reveal">
+      Let’s build something <span>amazing</span> together. <span class="Exper2-heart" aria-hidden="true">♥</span>
+    </p>
+
+  </div>
+</section>
+
+
+
+<!-- PORTFOLIO SECTION -->
   <div class="carosel-container" data-aos="fade-up" style="text-align: center;" id="Projects">
 
       <h2 class="qualify-title">
@@ -644,7 +1789,6 @@
       <button class="nav-bt left" id="prev">&#10094;</button>
       <div class="carousel-track" id="track">
 
-        <!-- DESIGN (3) -->
         <article class="project-card zoom-in" data-cat="design">
           <img class="project-thumb" data-src="port4.webp" alt="Portfolio website screenshot" loading="lazy">
           <div class="project-body"><div class="project-meta"><h3>Portfolio Website</h3>
@@ -659,7 +1803,6 @@
           <div class="project-body"><div class="project-meta"><h3>Dashboard UI</h3><span class="tag">Design</span></div><p class="project-desc">Analytics dashboard built for clarity and efficiency.</p></div>
         </article>
 
-        <!-- DEVELOPMENT (3) -->
         <article class="project-card zoom-in" data-cat="development">
           <img class="project-thumb" data-src="port3.jpg" alt="E-commerce screenshot" loading="lazy">
           <div class="project-body"><div class="project-meta"><h3>Security Gadgets Store</h3><span class="tag">Development</span></div><p class="project-desc">Full e-commerce site with checkout flow.</p></div>
@@ -673,7 +1816,6 @@
           <div class="project-body"><div class="project-meta"><h3>Booking System</h3><span class="tag">Development</span></div><p class="project-desc">Reservation and payment integration platform.</p></div>
         </article>
 
-        <!-- IT SUPPORT (3) -->
         <article class="project-card zoom-in" data-cat="it">
           <img class="project-thumb" data-src="port7.jpg" alt="IT support portal" loading="lazy">
           <div class="project-body"><div class="project-meta"><h3>IT Support Portal</h3><span class="tag">IT Support</span></div><p class="project-desc">Ticketing and troubleshooting portal.</p></div>
@@ -687,7 +1829,6 @@
           <div class="project-body"><div class="project-meta"><h3>Remote Support Tool</h3><span class="tag">IT Support</span></div><p class="project-desc">System for providing live remote assistance.</p></div>
         </article>
 
-        <!-- VOLUNTEER (3) -->
         <article class="project-card zoom-in" data-cat="volunteer">
           <img class="project-thumb" data-src="port10.webp" alt="Community center site" loading="lazy">
           <div class="project-body"><div class="project-meta"><h3>Community Center Site</h3><span class="tag">Volunteer</span></div><p class="project-desc">Non-profit event management site.</p></div>
@@ -701,7 +1842,6 @@
           <div class="project-body"><div class="project-meta"><h3>Charity Fundraising</h3><span class="tag">Volunteer</span></div><p class="project-desc">Donation and campaign management system.</p></div>
         </article>
 
-        <!-- PERSONAL (3) -->
         <article class="project-card zoom-in" data-cat="personal">
           <img class="project-thumb" data-src="port3.jpg" alt="Notes app" loading="lazy">
           <div class="project-body"><div class="project-meta"><h3>Notes App</h3><span class="tag">Personal</span></div><p class="project-desc">A lightweight notes app.</p></div>
@@ -725,668 +1865,438 @@
 
 
 
-<section class="qualify-section" id="qualification"  >
-  <div class="qualify-container">
-    <h2 class="qualify-title">
-      <span class="qualify-back-text">QUALITY</span>
-      <span class="qualify-front-text">EDUCATION & EXPERIENCE</span>
-    </h2>
+<section class="JOURNAL-section" id="journal">
 
-    <div class="qualify-grid">
-      <!-- Education -->
-      <div class="qualify-column">
-        <h3>My Education</h3>
+  <!-- Decorative background -->
+  <div class="JOURNAL-background" aria-hidden="true">
+    <span class="JOURNAL-orbit JOURNAL-orbit--one"></span>
+    <span class="JOURNAL-orbit JOURNAL-orbit--two"></span>
+    <span class="JOURNAL-sun"></span>
 
-        <div class="qualify-item qualify-mother">
-          <div class="qualify-dot-line"></div>
-            <div class="qualify-card qualify-card2">
-              <div class="qualify-content">
+    <div class="JOURNAL-mountains">
+      <span class="JOURNAL-mountain JOURNAL-mountain--one"></span>
+      <span class="JOURNAL-mountain JOURNAL-mountain--two"></span>
+      <span class="JOURNAL-mountain JOURNAL-mountain--three"></span>
+    </div>
 
-                <div style="display: flex;justify-content: space-between;">
-                <b class="degree">Diploma in Graphic & Website Design</b>
-                <div class="date">
-                  <i class="fa-solid fa-calendar"></i> 2017 - 2019
-                </div>
-            </div>
-              <b class="school">Prevailing Institute of Technology - <a href="">schoolweb.com</a></b>
-              <p class="desc">
-               Gained practical skills in website and graphic design using HTML, 
-               CSS, JavaScript, CorelDRAW, and Photoshop with a focus on responsive and creative design.
-              </p>
+    <span class="JOURNAL-dot-grid"></span>
+  </div>
 
-            </div>
-          </div>
-       </div>
+  <!-- Animated bird -->
+  <div class="JOURNAL-bird-flight" aria-hidden="true">
+    <div class="JOURNAL-bird">
+      <svg
+        viewBox="0 0 180 110"
+        role="presentation"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="JOURNAL-bird-red" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f1273f" />
+            <stop offset="100%" stop-color="#750014" />
+          </linearGradient>
 
-         <div class="qualify-item qualify-mother">
-          <div class="qualify-dot-line"></div>
-            <div class="qualify-card qualify-card2">
-              <div class="qualify-content">
+          <linearGradient id="JOURNAL-bird-navy" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#15274d" />
+            <stop offset="100%" stop-color="#020918" />
+          </linearGradient>
+        </defs>
 
-                <div style="display: flex;justify-content: space-between;">
-                <b class="degree">Basic Information & Technology Course</b>
-                <div class="date">
-                  <i class="fa-solid fa-calendar"></i> 2017 - 2019
-                </div>
-            </div>
-              <b class="school">KONAK Foundation Of Technology</b>
-              <p class="desc">
-                Developed a solid foundation in computer operations, IT fundamentals, Hardware Repairs and troubleshooting 
-                for digital systems.
-              </p>
+        <g class="JOURNAL-bird__tail">
+          <path
+            d="M78 61 C56 65 39 80 22 91 C45 87 62 81 81 72 Z"
+            fill="url(#JOURNAL-bird-navy)"
+          />
+          <path
+            d="M82 65 C63 77 52 93 43 105 C61 96 75 86 89 72 Z"
+            fill="#97051e"
+          />
+        </g>
 
-            </div>
-          </div>
-       </div>
-        
-        <div class="qualify-item qualify-mother">
-          <div class="qualify-dot-line"></div>
-            <div class="qualify-card qualify-card2">
-              <div class="qualify-content">
+        <g class="JOURNAL-bird__wing JOURNAL-bird__wing--back">
+          <path
+            d="M88 57 C67 30 46 13 15 4 C31 31 48 55 78 70 Z"
+            fill="url(#JOURNAL-bird-navy)"
+          />
+          <path
+            d="M74 49 C57 29 42 18 26 12 C39 35 51 50 74 63 Z"
+            fill="#24365c"
+            opacity="0.68"
+          />
+        </g>
 
-                <div style="display: flex;justify-content: space-between;">
-                <b class="degree"> High School Certificate </b>
-                <div class="date">
-                  <i class="fa-solid fa-calendar"></i> 2017 - 2019
-                </div>
-            </div>
-              <b class="school">Great Diamond High School</b>
-              <p class="desc">
-                Completed secondary education with strong performance in English, Mathematics, 
-                Biology and Computer Studies.
-              </p>
+        <g class="JOURNAL-bird__body">
+          <ellipse
+            cx="93"
+            cy="63"
+            rx="32"
+            ry="17"
+            transform="rotate(-8 93 63)"
+            fill="url(#JOURNAL-bird-red)"
+          />
+          <ellipse
+            cx="112"
+            cy="54"
+            rx="14"
+            ry="12"
+            fill="#b50928"
+          />
 
-            </div>
-          </div>
-       </div>
+          <path
+            d="M122 52 L157 48 L125 59 Z"
+            fill="#071126"
+          />
 
-      </div>
+          <circle cx="116" cy="51" r="2.2" fill="#ffffff" />
+          <circle cx="116.5" cy="51" r="1.1" fill="#061126" />
 
-      <!-- Experience -->
-      <div class="qualify-column righted">
+          <path
+            d="M84 76 C91 81 101 82 111 77"
+            fill="none"
+            stroke="#ec354c"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </g>
 
-        <div style="display: flex;justify-content: space-between;">
-        <h3>My Experience</h3>
-         <a href=""><h4 style="color: rgb(243, 26, 73);">Download CV</h4></a>
+        <g class="JOURNAL-bird__wing JOURNAL-bird__wing--front">
+          <path
+            d="M92 60 C105 29 127 12 165 4 C151 34 129 57 99 74 Z"
+            fill="url(#JOURNAL-bird-navy)"
+          />
+          <path
+            d="M103 51 C119 31 136 19 153 13 C141 37 127 53 102 65 Z"
+            fill="#26395f"
+            opacity="0.65"
+          />
+        </g>
+      </svg>
+      
+    </div>
+
+    <span class="JOURNAL-flight-feather JOURNAL-flight-feather--one">
+      <img  style="width: 40px;" src="feather.png" alt="">
+    </span>
+    <span class="JOURNAL-flight-feather JOURNAL-flight-feather--two">
+      <img  style="width: 50px;" src="feather.png" alt="">
+    </span>
+    <span class="JOURNAL-flight-feather JOURNAL-flight-feather--three">
+      <img  style="width: 60px;" src="feather.png" alt="">
+    </span>
+
+
+    
+  </div>
+
+  <div class="JOURNAL-container">
+    <!-- Top introduction -->
+    <div class="JOURNAL-header JOURNAL-reveal">
+      <div class="JOURNAL-heading-area">
+        <div class="JOURNAL-eyebrow">
+          <span></span>
+          From My Journal
         </div>
 
-        <div class="qualify-item qualify-mother">
-          <div class="qualify-dot-line"></div>
-            <div class="qualify-card">
-              <div class="qualify-content">
+        <h2 class="JOURNAL-title">
+          Ideas. Insights.
+          <em>Impact.</em>
+        </h2>
 
-                <div style="display: flex;justify-content: space-between;">
-                <b class="degree">Customer Representative</b>
-                <div class="date">
-                  <i class="fa-solid fa-calendar"></i> 2022 - 2024
-                </div>
-            </div>
-              <b class="school">Shoprite Woodstock Supermarket Capetown, South Africab>
-              <p class="desc">
-                  Supported 300+ customers weekly through multi-channel communication and CRM tools, 
-                  ensuring seamless service delivery that increased satisfaction scores and repeat purchases
-              </p>
-              <span style="display: flex;align-items: center;align-content: center;">
-                
-                 <button class="qualify-modal-btn" data-modal="qualifyModal1">Overview</button> 
-                <p style="cursor: pointer; color: rgb(73, 73, 73);padding: 6px 20px;border: 1px solid red;margin: 12px 10px 10px;">
-                  Hire Me
-                </p>
+        <div class="JOURNAL-title-line"></div>
 
-              </span>
-            </div>
-          </div>
-       </div>
-
-      <div class="qualify-item qualify-mother">
-        <div class="qualify-dot-line"></div>
-          <div class="qualify-card">
-            <div class="qualify-content">
-
-              <div style="display: flex;justify-content: space-between;">
-              <b class="degree"> Administrative & IT Support</b>
-              <div class="date">
-                <i class="fa-solid fa-calendar"></i> 2021 - 2022
-              </div>
-          </div>
-            <b class="school">Shoprite Woodstock Supermarket Capetown, South Africa</b>
-            <p class="desc">
-              Strengthened productivity by Supporting executive operations and customer engagement by serving 200+ clients weekly 
-              through multi-channel communication and CRM systems, while providing direct administrative and IT assistance to 
-              the Director—handling typing, scheduling, document organization, and technical troubleshooting. 
- 
-            </p>
-            <span style="display: flex;align-items: center;align-content: center;">
-              
-              <button class="qualify-modal-btn" data-modal="qualifyModal2">Overview</button> 
-              <p style="cursor: pointer; color: rgb(73, 73, 73);padding: 6px 20px;border: 1px solid red;margin: 12px 10px 10px;">
-                Hire Me
-              </p>
-
-            </span>
-          </div>
-          </div>
-      </div>
-
-      <div class="qualify-item qualify-mother">
-          <div class="qualify-dot-line"></div>
-            <div class="qualify-card">
-        <div class="qualify-content">
-
-          <div style="display: flex;justify-content: space-between;">
-          <b class="degree">Front-end website designer</b>
-          <div class="date">
-            <i class="fa-solid fa-calendar"></i> 2020 - present (Occasional)
-          </div>
-      </div>
-        <b class="school">Freelance</b>
-        <p class="desc">
-          Delivered responsive, visually engaging websites using HTML, CSS, and JavaScript, driving 
-          stronger client conversion and retention through UI optimization, performance improvement, 
-          and personalized technical support.
+        <p class="JOURNAL-introduction">
+          My space to share thoughts on design, technology, creativity, and the
+          journey of building meaningful digital experiences.
         </p>
-        <span style="display: flex;align-items: center;align-content: center;">
-          
-          <button class="qualify-modal-btn" data-modal="qualifyModal3">Overview</button> 
-          <p  style="cursor: pointer; color: rgb(73, 73, 73);padding: 6px 20px;border: 1px solid red;margin: 12px 10px 10px;">
-            Hire Me
+
+        <div class="JOURNAL-mini-details">
+          <div class="JOURNAL-mini-detail">
+            <span class="JOURNAL-mini-icon" aria-hidden="true">✦</span>
+            <span>New stories and creative notes</span>
+          </div>
+
+          <span class="JOURNAL-mini-divider"></span>
+
+          <div class="JOURNAL-reader-group">
+            <div class="JOURNAL-reader-avatars" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                alt=""
+              />
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+                alt=""
+              />
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                alt=""
+              />
+            </div>
+
+            <span>Thoughts made for curious minds</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="JOURNAL-hero-art" aria-hidden="true">
+        <div class="JOURNAL-art-circle JOURNAL-art-circle--one"></div>
+        <div class="JOURNAL-art-circle JOURNAL-art-circle--two"></div>
+
+        <svg class="JOURNAL-flight-path" viewBox="0 0 520 190">
+          <path
+            d="M10 145 C95 195 135 84 235 115 C330 145 338 48 505 55"
+          />
+        </svg>
+
+        <span class="JOURNAL-art-feather JOURNAL-art-feather--one"></span>
+        <span class="JOURNAL-art-feather JOURNAL-art-feather--two"></span>
+        
+      </div>
+    </div>
+
+    <!-- Blog cards -->
+    <div class="JOURNAL-grid">
+      <article
+        class="JOURNAL-card JOURNAL-reveal"
+        data-journal-tilt
+        style="--JOURNAL-delay: 0ms"
+      >
+        <a href="#" class="JOURNAL-card__image-link" aria-label="Read The Power of White Space">
+          <img
+            class="JOURNAL-card__image"
+            src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=85"
+            alt="Modern minimal white architectural structure"
+          />
+
+          <span class="JOURNAL-card__image-overlay"></span>
+
+          <span class="JOURNAL-card__number">01</span>
+        </a>
+
+        <div class="JOURNAL-card__content">
+          <span class="JOURNAL-card__category">Design</span>
+
+          <h3 class="JOURNAL-card__title">
+            <a href="#">The Power of White Space in UI/UX Design</a>
+          </h3>
+
+          <p class="JOURNAL-card__description">
+            Why minimalism is not simply about having less, but making space
+            for what truly deserves attention.
           </p>
 
-        </span>
-      </div>
+          <div class="JOURNAL-card__footer">
+            <div class="JOURNAL-card__meta">
+              <span>May 16, 2026</span>
+              <span class="JOURNAL-meta-dot"></span>
+              <span>5 min read</span>
             </div>
+
+            <a href="#" class="JOURNAL-card__arrow" aria-label="Read article">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M14 7l5 5-5 5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="JOURNAL-card JOURNAL-card--featured JOURNAL-reveal"
+        data-journal-tilt
+        style="--JOURNAL-delay: 120ms"
+      >
+        <div class="JOURNAL-featured-label">
+          <span>★</span>
+          Featured
+        </div>
+
+        <a href="#" class="JOURNAL-card__image-link" aria-label="Read Designing for Impact">
+          <img
+            class="JOURNAL-card__image"
+            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=85"
+            alt="Dramatic lighthouse landscape"
+          />
+
+          <span class="JOURNAL-card__image-overlay JOURNAL-card__image-overlay--dark"></span>
+
+          <span class="JOURNAL-card__number">02</span>
+        </a>
+
+        <div class="JOURNAL-card__content">
+          <span class="JOURNAL-card__category">Thoughts</span>
+
+          <h3 class="JOURNAL-card__title">
+            <a href="#">Designing for Impact in a Noisy World</a>
+          </h3>
+
+          <p class="JOURNAL-card__description">
+            Reflections on clarity, purpose, and creating experiences that
+            connect instead of competing for attention.
+          </p>
+
+          <div class="JOURNAL-card__footer">
+            <div class="JOURNAL-card__meta">
+              <span>May 14, 2026</span>
+              <span class="JOURNAL-meta-dot"></span>
+              <span>6 min read</span>
+            </div>
+
+            <a href="#" class="JOURNAL-card__arrow JOURNAL-card__arrow--filled" aria-label="Read article">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M14 7l5 5-5 5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="JOURNAL-card JOURNAL-reveal"
+        data-journal-tilt
+        style="--JOURNAL-delay: 240ms"
+      >
+        <a href="#" class="JOURNAL-card__image-link" aria-label="Read AI Tools That Supercharge My Creative Workflow">
+          <img
+            class="JOURNAL-card__image"
+            src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=85"
+            alt="Abstract digital technology cubes"
+          />
+
+          <span class="JOURNAL-card__image-overlay"></span>
+
+          <span class="JOURNAL-card__number">03</span>
+        </a>
+
+        <div class="JOURNAL-card__content">
+          <span class="JOURNAL-card__category">Technology</span>
+
+          <h3 class="JOURNAL-card__title">
+            <a href="#">AI Tools That Supercharge My Creative Workflow</a>
+          </h3>
+
+          <p class="JOURNAL-card__description">
+            A practical collection of tools that help me research, ideate,
+            design, and build better digital work.
+          </p>
+
+          <div class="JOURNAL-card__footer">
+            <div class="JOURNAL-card__meta">
+              <span>May 12, 2026</span>
+              <span class="JOURNAL-meta-dot"></span>
+              <span>4 min read</span>
+            </div>
+
+            <a href="#" class="JOURNAL-card__arrow" aria-label="Read article">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M14 7l5 5-5 5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+    <div class="JOURNAL-closing JOURNAL-reveal">
+      <span aria-hidden="true">
+        <img src="feather.png" alt="">
+      </span>
+
+      <p>
+        Thank you for being here.
+        <small>Let’s keep learning, building, and creating together.</small>
+      </p>
+    </div>
+
+
+
+  </div>
+  
+
+          <!-- Bottom CTA -->
+    <div class="JOURNAL-cta JOURNAL-reveal">
+      <div class="JOURNAL-cta__decoration" aria-hidden="true">
+        <div class="JOURNAL-ink-bottle">
+          <span class="JOURNAL-ink-feather"></span>
+          <span class="JOURNAL-ink-neck"></span>
+          <span class="JOURNAL-ink-base"></span>
+        </div>
       </div>
 
+      <div class="JOURNAL-cta__statement">
+        <p>
+          More stories.<br />
+          More lessons.<br />
+          <em>More of the journey.</em>
+        </p>
+      </div>
 
+      <span class="JOURNAL-cta__divider"></span>
+
+      <div class="JOURNAL-statistics">
+        <div class="JOURNAL-stat">
+          <span class="JOURNAL-stat__icon">▤</span>
+          <strong>24+</strong>
+          <small>Articles</small>
+        </div>
+
+        <div class="JOURNAL-stat">
+          <span class="JOURNAL-stat__icon">♡</span>
+          <strong>Design</strong>
+          <small>Stories</small>
+        </div>
+
+        <div class="JOURNAL-stat">
+          <span class="JOURNAL-stat__icon">◷</span>
+          <strong>5 min</strong>
+          <small>Average read</small>
+        </div>
+      </div>
+
+      <div class="JOURNAL-cta__action">
+        <a href="/blog" class="JOURNAL-main-button">
+          <span>Read Full Blog</span>
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14M14 7l5 5-5 5" />
+          </svg>
+
+          <span class="JOURNAL-main-button__shine"></span>
+        </a>
+
+        <p>Dive deeper into ideas that inspire meaningful creative work.</p>
       </div>
     </div>
-  </div>
+
 </section>
 
-<!-- Job 1 -->
-<div class="qualify-modal" id="qualifyModal1">
-  <div class="qualify-modal-content">
-    <span class="qualify-close">&times;</span>
-    <h2>Website Designer — BEMS INSTITUTE OF TECHNOLOGY</h2>
-    <p><strong>Overview:</strong> Designed and managed institutional websites using HTML, CSS, and JavaScript with focus on responsiveness and accessibility.</p>
-    <p><strong>Challenges:</strong> Coordinating updates with multiple departments and ensuring mobile performance optimization.</p>
-    <p><strong>Achievements:</strong> Improved site speed by 40% and led redesigns that increased engagement.</p>
-    <p><strong>Comments:</strong> Recognized for creativity and consistency in visual identity.</p>
-  </div>
-</div>
 
-<!-- Job 2 -->
-<div class="qualify-modal" id="qualifyModal2">
-  <div class="qualify-modal-content">
-    <span class="qualify-close">&times;</span>
-    <h2>Front-End Developer — Freelance Projects</h2>
-    <p><strong>Overview:</strong> Built websites for individuals and startups using HTML, CSS, JavaScript, and CorelDRAW for UI concepts.</p>
-    <p><strong>Challenges:</strong> Handling diverse client requirements and timelines while maintaining modern UX/UI standards.</p>
-    <p><strong>Achievements:</strong> Successfully deployed 10+ projects and maintained high client satisfaction ratings.</p>
-    <p><strong>Comments:</strong> Clients appreciated clear communication and problem-solving approach.</p>
-  </div>
-</div>
-
-<!-- Job 3 -->
-<div class="qualify-modal" id="qualifyModal3">
-  <div class="qualify-modal-content">
-    <span class="qualify-close">&times;</span>
-    <h2>Customer Service Representative — Retail/Warehouse</h2>
-    <p><strong>Overview:</strong> Provided customer assistance, processed orders, and ensured smooth service flow.</p>
-    <p><strong>Challenges:</strong> Managing multiple customer requests during peak hours efficiently.</p>
-    <p><strong>Achievements:</strong> Improved feedback scores and developed quick problem-resolution methods.</p>
-    <p><strong>Comments:</strong> Known for professionalism and patience with customers.</p>
-  </div>
-</div>
-
-<!-- Job 4 -->
-<div class="qualify-modal" id="qualifyModal4">
-  <div class="qualify-modal-content">
-    <span class="qualify-close">&times;</span>
-    <h2>IT Support & Computer Operator — BEMS INSTITUTE</h2>
-    <p><strong>Overview:</strong> Assisted in system maintenance, troubleshooting, and supported academic operations.</p>
-    <p><strong>Challenges:</strong> Handling both hardware and software support requests simultaneously.</p>
-    <p><strong>Achievements:</strong> Reduced downtime by 30% and implemented faster troubleshooting protocols.</p>
-    <p><strong>Comments:</strong> Praised for reliability and technical proficiency.</p>
-  </div>
-</div>
-
-
-<!--
-  
-<div class="experience-section">
-
-  
-  
-  <div class="experience-titles">
-
-    <H1>Work Experiences</H1>
-    <div class="experience-title active" data-id="1">
-      <img src="Dechoice.jpg" alt="">
-      <div class="title-info">
-        <strong>Frontend Developer</strong>
-        <span>BemsSoft Hubs | Jan 2022 - Dec 2022</span>
-      </div>
-    </div>
-    <div class="experience-title" data-id="2">
-      <img src="BEMS.png" alt="">
-      <div class="title-info">
-        <strong>Website Designer</strong>
-        <span>Company B | Feb 2021 - Dec 2021</span>
-      </div>
-    </div>
-    <div class="experience-title" data-id="3">
-      <i class="fas fa-code"></i>
-      <div class="title-info">
-        <strong>IT Assistant</strong>
-        <span>Company C | Mar 2020 - Jan 2021</span>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="experience-content-container">
-    <div class="experience-content active" data-id="1">
-      <div class="up">
-
-      <h2>Frontend Developer - BemsSoft Hubs</h2>
-
-      <span class="under" style="display: flex;justify-content: space-between;margin-bottom: 10px;"> 
-
-       <span style="display: flex; justify-content: space-around;align-items: center;"> 
-        <b class="mod" style="background-color: rgb(7, 37, 102);padding: 7px;color: rgb(229, 229, 229);border-radius: 10px;">BM </b>  
-        <span style="padding: 5px;">Abia State Nigeria,</span> 
-        <strong style="padding: 5px;">.</strong> 
-        <span style="padding: 5px;">03/2021 - 02/2022</span> 
-        </span>
-
-        <strong style="color: rgb(187, 28, 28);font-weight: 900;font-size: 30px;"><i class="fas fa-star"></i></strong>
-
-      </span>
-
-
-      <div class="flexbut" style="display: flex;justify-content: space-between;">
-
-        <div style="display: flex;color: black;">
-          <button style="font-size: 16px; margin: 0px 5px 0px 0px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgb(187, 28, 28);color: white;">
-            Contract
-          </button>
-          
-          <button style="font-size: 16px; margin: 0px 5px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgb(228, 228, 228);">Full-Time Service</button>
-        </div>
-
-
-        <button style="font-size: 16px; margin: 0px 0px 0px 5px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgba(155, 237, 188, 0.53);">
-          83% Satisfied Customers
-        </button>
-
-      </div>
-      </div>
-      <div class="experience-duties">
-          <h3>Overview</h3>
-        <p>Developed modern UI, implemented responsive design, collaborated with team.</p>
-      </div>
-      <div class="experience-challenges">
-        <h3>Challenges:</h3>
-        <p>Ensuring cross-browser compatibility and improving page load speed.</p>
-      </div>
-      <div class="experience-contributions">
-        <h3>Contributions:</h3>
-        <p>Optimized code, mentored junior developers, introduced automation tools.</p>
-      </div>
-      <div class="managers">
-        <h3>Managers:</h3>
-        <div class="manager">
-          <img src="teacher6.jpg" alt="Manager 1">
-          <span>Jane Doe</span>
-        </div>
-        <div class="manager">
-          <img src="teacher5.jpg" alt="Manager 2">
-          <span>John Smith</span>
-        </div>
-      </div>
-      <div class="gained">
-        <h3>Learnings & Achievements:</h3>
-        <p>Enhanced frontend skills, gained teamwork experience, improved problem-solving.</p>
-      </div>
-      <div class="rating">
-        <strong>Rated:</strong> ★★★★☆
-      </div>
-      <div class="remark">
-        <img src="teacher2.jpg" alt="Remark">
-        <p>"Williams is a highly dedicated developer. Excellent performance!" <br>
-        Email: manager@example.com | Contact: +123456789</p>
-      </div>
-    </div>
-
-    
-    <div class="experience-content" data-id="2">
-            <div class="up">
-
-      <h2>Website Design - BemsSoft Hubs</h2>
-
-      <span class="under" style="display: flex;justify-content: space-between;margin-bottom: 10px;"> 
-
-       <span style="display: flex; justify-content: space-around;align-items: center;"> 
-        <b class="mod" style="background-color: rgb(7, 37, 102);padding: 7px;color: rgb(229, 229, 229);border-radius: 10px;">BM </b>  
-        <span style="padding: 5px;">Abia State Nigeria,</span> 
-        <strong style="padding: 5px;">.</strong> 
-        <span style="padding: 5px;">03/2021 - 02/2022</span> 
-        </span>
-
-        <strong style="color: rgb(187, 28, 28);font-weight: 900;font-size: 30px;"><i class="fas fa-star"></i></strong>
-
-      </span>
-
-
-      <div class="flexbut" style="display: flex;justify-content: space-between;">
-
-        <div style="display: flex;color: black;">
-          <button style="font-size: 16px; margin: 0px 5px 0px 0px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgb(187, 28, 28);color: white;">
-            Contract
-          </button>
-          
-          <button style="font-size: 16px; margin: 0px 5px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgb(228, 228, 228);">Full-Time Service</button>
-        </div>
-
-
-        <button style="font-size: 16px; margin: 0px 0px 0px 5px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgba(155, 237, 188, 0.53);">
-          95% Satisfied Clients
-        </button>
-
-      </div>
-      </div>
-      <div class="experience-duties">
-          <h3>Overview</h3>
-        <p>Designed website layouts, created graphics, collaborated with developers.</p>
-      </div>
-      <div class="experience-challenges">
-        <h3>Challenges:</h3>
-        <p>Meeting tight deadlines and adapting to client feedback quickly.</p>
-      </div>
-      <div class="experience-contributions">
-        <h3>Contributions:</h3>
-        <p>Improved user experience, optimized visual assets, created style guides.</p>
-      </div>
-      <div class="managers">
-        <h3>Managers:</h3>
-        <div class="manager">
-          <img src="teacher5.jpg" alt="Manager 1">
-          <span>Mary Lee</span>
-        </div>
-      </div>
-      <div class="gained">
-        <h3>Learnings & Achievements:</h3>
-        <p>Enhanced graphic design skills, improved workflow, collaborated effectively.</p>
-      </div>
-      <div class="rating">
-        <strong>Rated:</strong> ★★★★★
-      </div>
-      <div class="remark">
-        <img src="teacher2.jpg" alt="Remark">
-        <p>"Williams delivered exceptional designs under pressure." <br>
-        Email: design.manager@example.com | Contact: +987654321</p>
-      </div>
-    </div>
-
-    
-    <div class="experience-content" data-id="3">
-      
-            <div class="up">
-
-      <h2>IT Assistant - BemsSoft Hubs</h2>
-
-      <span class="under" style="display: flex;justify-content: space-between;margin-bottom: 10px;"> 
-
-       <span style="display: flex; justify-content: space-around;align-items: center;"> 
-        <b class="mod" style="background-color: rgb(7, 37, 102);padding: 7px;color: rgb(229, 229, 229);border-radius: 10px;">BM </b>  
-        <span style="padding: 5px;">Abia State Nigeria,</span> 
-        <strong style="padding: 5px;">.</strong> 
-        <span style="padding: 5px;">03/2021 - 02/2022</span> 
-        </span>
-
-        <strong style="color: rgb(187, 28, 28);font-weight: 900;font-size: 30px;"><i class="fas fa-star"></i></strong>
-
-      </span>
-
-
-      <div class="flexbut" style="display: flex;justify-content: space-between;">
-
-        <div style="display: flex;color: black;">
-          <button style="font-size: 16px; margin: 0px 5px 0px 0px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgb(187, 28, 28);color: white;">
-            Contract
-          </button>
-          
-          <button style="font-size: 16px; margin: 0px 5px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgb(228, 228, 228);">Full-Time Service</button>
-        </div>
-
-
-        <button style="font-size: 16px; margin: 0px 0px 0px 5px; font-weight: 500; border: none; padding: 8px 20px;border-radius: 20px;background-color:  rgba(155, 237, 188, 0.53);">
-          93% Added Value
-        </button>
-
-      </div>
-      </div>
-
-
-      <div class="experience-duties">
-          <h3>Overview</h3>
-        <p>Maintained IT infrastructure, supported employees, handled troubleshooting.</p>
-      </div>
-      <div class="experience-challenges">
-        <h3>Challenges:</h3>
-        <p>Managing multiple IT requests simultaneously and resolving network issues quickly.</p>
-      </div>
-      <div class="experience-contributions">
-        <h3>Contributions:</h3>
-        <p>Streamlined IT processes, implemented backup solutions, assisted with software updates.</p>
-      </div>
-      <div class="managers">
-        <h3>Managers:</h3>
-        <div class="manager">
-          <img src="teacher2.jpg" alt="Manager 1">
-          <span>Peter Johnson</span>
-        </div>
-      </div>
-      <div class="gained">
-        <h3>Learnings & Achievements:</h3>
-        <p>Improved IT troubleshooting skills, communication, and problem-solving under pressure.</p>
-      </div>
-      <div class="rating">
-        <strong>Rated:</strong> ★★★★☆
-      </div>
-      <div class="remark">
-        <img src="teacher6.jpg" alt="Remark">
-        <p>"Reliable and diligent IT support assistant." <br>
-        Email: it.manager@example.com | Contact: +1122334455</p>
-      </div>
-    </div>
-  </div>
-</div>
-
--->
-
-<!--
-<div class="modal" id="experienceModal">
-  <div class="modal-content" id="modalContent">
-    <span class="modal-close" onclick="closeModal()">&times;</span>
-    
-  </div>
-</div>
--->
-
-<div class="">
-    
-<section class="blog-qualify-body" id="Blog">
-      <h2 class="qualify-title">
-      <span class="qualify-back-text" style="color: rgba(230, 226, 226, 0.16);">BLOG</span>
-      <span class="qualify-front-text" style="color: whitesmoke;">RECENT POSTS</span>
-    </h2>
- <div class="blog-qualify-container">
-    <div class="blog-qualify-wrapper">
-
-      <!-- LEFT STACK -->
-      <div class="stack blog-left">
-        <!-- Card 1 -->
-        <article class="bcard slide-left" aria-label="Whispers of Wisdom">
-          <div class="bcard-inner" role="img" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7f6f0f3b9fb5f1f2f2a9a0b9d9c516cf" alt="Whispers of Wisdom image">
-          </div>
-
-          <!-- top meta -->
-          <div class="bcard-meta">
-            <div class="meta-left"><span class="category">Financing</span></div>
-            <div class="meta-right"><span class="date">Oct 16, 2024</span></div>
-          </div>
-
-          <!-- bottom title -->
-          <div class="bcard-title">
-            <h3>Whispers of Wisdom</h3>
-          </div>
-
-          <!-- wavy white notch (SVG overlay) -->
-          <div class="card-notch" aria-hidden="true">
-            <!-- organic wavy path to emulate the reference curve -->
-            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M220 0c-28 12-50 40-92 54C74 73 40 82 0 120v20h220V0z" fill="#ffffff"/>
-            </svg>
-          </div>
-
-          <!-- circular arrow button -->
-          <button class="card-action" aria-label="Open article">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="bcard slide-left" aria-label="Ink-Stained Insights">
-          <div class="bcard-inner" role="img" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b3b3b5e0a3b8f3a6c9f2f1b2c6c2e6f" alt="Ink-Stained Insights image">
-          </div>
-
-          <div class="bcard-meta">
-            <div class="meta-left"><span class="category">Lifestyle</span></div>
-            <div class="meta-right"><span class="date">Oct 23, 2024</span></div>
-          </div>
-
-          <div class="bcard-title">
-            <h3>Ink-Stained Insights</h3>
-          </div>
-
-          <div class="card-notch" aria-hidden="true">
-            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M220 0c-28 12-50 40-92 54C74 73 40 82 0 120v20h220V0z" fill="#ffffff"/>
-            </svg>
-          </div>
-
-          <button class="card-action" aria-label="Open article">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </article>
-      </div>
-
-      <!-- CENTER (image + title) -->
-      <div class="center zoom-in ">
-        <div class="round"></div>
-        <div class="main-img">
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b8a5b5aa7d9b3b8cd9b0a2d6f9d4b0d" alt="Journey image">
-        </div>
-        <h1 style="z-index: 10;position: relative;">Journey Through <br><span>Life's Spectrum</span></h1>
-
-            <div class="card-notch" aria-hidden="true" >
-            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M220 0c-28 12-50 40-92 54C74 73 40 82 0 120v20h220V0z" fill="#071029 "/>
-            </svg>
-          </div>
-      </div>
-
-      <!-- RIGHT STACK -->
-      <div class="stack blog-right slide-right">
-
-        <div class="desc ">
-          Welcome to Ash Gray's Blog: A Realm of Reflection, Inspiration, and Discovery,
-          Where Words Illuminate Paths of Meaning and Thoughts Unravel the Mysteries of Life’s Spectrum.
-        </div>
-
-        <div class="join-row" role="navigation" aria-label="Join and social">
-          <button class="join-btn">Subscribe</button>
-
-          <div style="flex:1"></div> <!-- flexible spacer so icons align to right like reference -->
-
-          <div class="social-row" aria-hidden="false">
-            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-        </div>
-
-        <!-- Right smaller card -->
-        <article class="bcard right-card slide-right " aria-label="Musings in Grayscale">
-          <div class="bcard-inner" role="img" aria-hidden="true">
-            <img src="view-lisbon-river-tagus-portugal.jpg" alt="Musings image">
-          </div>
-
-          <div class="bcard-meta">
-            <div class="meta-left"><span class="category">Community</span></div>
-            <div class="meta-right"><span class="date">Dec 4, 2024</span></div>
-          </div>
-
-          <div class="bcard-title">
-            <h3>Musings in Lisboa City</h3>
-          </div>
-
-          <div class="card-notch" aria-hidden="true">
-            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M220 0c-28 12-50 40-92 54C74 73 40 82 0 120v20h220V0z" fill="#ffffff"/>
-            </svg>
-          </div>
-
-          <button class="card-action" aria-label="Open article">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </article>
-
-        
-
-      </div>
-    </div>
-  </div>
-
-</section>
-</div>
-<!-- Font Awesome -->
 
 
 <div class="testimonial-wrapper">
 
-  <center><strong>Testimonies</strong></center>
+  <center><strong>OPINIONS</strong></center>
 
     <div class="inner-testimonial-wrapper">
-
-
-
 
     <div class="testimonial-content" style="position: relative; overflow: hidden;">
 
         <div class="bigquote">“</div>
 
-            <!-- Curved connector line -->
-
-      <!-- Left side - Reviewer list -->
       <div class="reviewer-list">
-        <!-- Reviewer 1 -->
+
         <div class="reviewer-item">
-          <!-- Replace image -->
+
           <img src="testimony2.jpg" alt="Edward Alexander">
           <div class="reviewer-info">
-            <!-- Replace name -->
+
             <div class="name">Edward Alexander</div>
-            <!-- Replace rating/date -->
+
             <div class="rating">⭐ 4.9 on 29 Aug, 2017</div>
           </div>
         </div>
 
-        <!-- Reviewer 2 -->
         <div class="reviewer-item">
           <img src="testimony3.jpg" alt="Diana Johnston">
           <div class="reviewer-info">
@@ -1395,7 +2305,6 @@
           </div>
         </div>
 
-        <!-- Reviewer 3 -->
         <div class="reviewer-item">
           <img src="testimony1.jpg" alt="Lauren Contreras">
           <div class="reviewer-info">
@@ -1405,13 +2314,9 @@
         </div>
       </div>
 
-
-      <!-- Right side - Comment -->
       <div class="review-text-area">
         <div class="quote">“</div>
-        
 
-        <!-- Replace comment text below -->
         <div class="review-text active">
           Overall pleasurable experience. Pay a little first and pay a little
           during the development of the app as milestones are achieved, which
@@ -1424,7 +2329,7 @@
         </div>
 
         <div class="review-text">
-          Very professional team! Always responsive and focused on achieving the
+          Very professional Gentle Man! Always responsive and focused on achieving the
           best results. Highly recommend.
         </div>
       </div>
@@ -1437,624 +2342,1078 @@
 
 
 
+<!-- HUMAN-CENTRED CONTACT SECTION-->
 
+<section class="HUMAN-CONTACT-section" id="contact">
+  <div class="HUMAN-CONTACT-background" aria-hidden="true">
+    <span class="HUMAN-CONTACT-grid"></span>
+    <span class="HUMAN-CONTACT-orb HUMAN-CONTACT-orb--red"></span>
+    <span class="HUMAN-CONTACT-orb HUMAN-CONTACT-orb--navy"></span>
+    <span class="HUMAN-CONTACT-lightTrail"></span>
+  </div>
 
-<section class="contact-section" id="contactsection">
-    
- 
-  <div class="circle-bg"></div>
-
-  <h1 class="say-hello"><span>Say</span> Hello</h1>
-
-  <div class="contact-card" id="contactCard">
-
-    <div class="form-section" id="formSection">
-      
-      <form id="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html" >
-        
-       <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-       </p>
-        
-        <label>Hello there, my name is 
-          <input type="text" placeholder="your name here..."  name="SenderName" required>
-        </label>
-
-        <label>and I'm Writing to know more about 
-          <input type="text" placeholder="your Message here..." name="Message" required>
-        </label>
-
-        <label>You can reach me at 
-          <input type="email" placeholder="your email address..." name="senderEmail" required>
-        </label>
-
-        <button type="submit" class="send-btn">Send</button>
-
-      </form>
+  <div class="HUMAN-CONTACT-container">
+    <!-- =========================
+         SECTION HEADING
+    ========================== -->
+    <div class="HUMAN-CONTACT-heading HUMAN-CONTACT-reveal">
+      <span class="HUMAN-CONTACT-eyebrow">
+        <i></i>
+        What's On Your Mind?
+      </span>
 
     </div>
 
-    <div class="info-section">
-      <div><a href="tel:+351927387852">(351) 927 387 851</a></div>
-      <div><a href="mailto:williamssunday714@gmail.com">williamssunday714@gmail.com</a></div>
-      <div>
-        <address>
-          <a href="https://www.linkedin.com/in/profile-william-sunday" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </address>
+    <div class="HUMAN-CONTACT-layout">
+      <!-- =====================================================
+           PERSONAL INTRODUCTION
+      ====================================================== -->
+      <aside class="HUMAN-CONTACT-profile HUMAN-CONTACT-reveal">
+        <div class="HUMAN-CONTACT-profileGlow" aria-hidden="true"></div>
+
+        <div class="HUMAN-CONTACT-profileTop">
+          <div class="HUMAN-CONTACT-avatarShell">
+            <img
+              src="profil.png"
+              alt="Williams Sunday"
+              class="HUMAN-CONTACT-avatar"
+            />
+
+            <span class="HUMAN-CONTACT-online"></span>
+          </div>
+
+          <div class="HUMAN-CONTACT-profileIdentity">
+            <span>You are contacting</span>
+            <strong>Williams Sunday</strong>
+            <small>Designer · Developer · Customer Experience</small>
+          </div>
+        </div>
+
+        <blockquote class="HUMAN-CONTACT-quote">
+          <span>“</span>
+
+          <p>
+          <span style="color: rgba(255, 254, 252, 0.719);font-weight: 700;">Let's Create Something People Remember.</span>
+          Every great opportunity begins with a simple Hello.
+          </p>
+        </blockquote>
+
+        <div class="HUMAN-CONTACT-traits">
+          <div>
+            <span class="HUMAN-CONTACT-traitIcon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 21s7-3.8 7-10V5l-7-2-7 2v6c0 6.2 7 10 7 10Z" />
+                <path d="m9 12 2 2 4-5" />
+              </svg>
+            </span>
+
+            <span>
+              <strong>Personal response</strong>
+              <small>Every message is read personally.</small>
+            </span>
+          </div>
+
+          <div>
+            <span class="HUMAN-CONTACT-traitIcon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8.5" />
+                <path d="M12 7v5l3 2" />
+              </svg>
+            </span>
+
+            <span>
+              <strong>Response goal</strong>
+              <small>Usually within 24 hours.</small>
+            </span>
+          </div>
+
+          <div>
+            <span class="HUMAN-CONTACT-traitIcon">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
+              </svg>
+            </span>
+
+            <span>
+              <strong>Open conversation</strong>
+              <small>Projects, roles and collaborations.</small>
+            </span>
+          </div>
+        </div>
+
+        <!-- =========================
+             DIRECT CONTACT BUTTON
+        ========================== -->
+        <div class="HUMAN-CONTACT-direct">
+          <span class="HUMAN-CONTACT-directLabel">
+            Prefer another way to connect?
+          </span>
+
+          <div class="HUMAN-CONTACT-options">
+            <button
+              class="HUMAN-CONTACT-optionsTrigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="HUMAN-CONTACT-optionsMenu"
+            >
+              <span class="HUMAN-CONTACT-optionsGlow"></span>
+
+              <span class="HUMAN-CONTACT-optionsIcon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7.5 5.5h9a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-4.3l-3.9 3v-3H7.5a3 3 0 0 1-3-3v-5a3 3 0 0 1 3-3Z" />
+                  <path d="M8.3 10h7.4M8.3 13h4.8" />
+                </svg>
+              </span>
+
+              <span class="HUMAN-CONTACT-optionsText">
+                <strong>Reach out directly</strong>
+                <small>Phone, email and social profiles</small>
+              </span>
+
+              <span class="HUMAN-CONTACT-optionsArrow">
+                <svg viewBox="0 0 24 24">
+                  <path d="m8 10 4 4 4-4" />
+                </svg>
+              </span>
+            </button>
+
+            <div
+              class="HUMAN-CONTACT-optionsMenu"
+              id="HUMAN-CONTACT-optionsMenu"
+              aria-hidden="true"
+            >
+              <div class="HUMAN-CONTACT-optionsInner">
+                <div class="HUMAN-CONTACT-optionsHeader">
+                  <div>
+                    <span>Direct channels</span>
+                    <p>Choose the most convenient option.</p>
+                  </div>
+
+                  <span class="HUMAN-CONTACT-status">
+                    <i></i>
+                    Available
+                  </span>
+                </div>
+
+                <div class="HUMAN-CONTACT-optionLinks">
+                  <a href="tel:+351000000000">
+                    <span class="HUMAN-CONTACT-optionIcon">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M8.4 3.5 5.6 4.8a2 2 0 0 0-1.1 2.3c1.5 6.1 6.3 10.9 12.4 12.4a2 2 0 0 0 2.3-1.1l1.3-2.8a1.5 1.5 0 0 0-.5-1.8l-3.1-2.3a1.5 1.5 0 0 0-1.9.1l-1.4 1.4A12.1 12.1 0 0 1 9 8.4L10.4 7a1.5 1.5 0 0 0 .1-1.9L8.2 4a1.5 1.5 0 0 0-1.8-.5Z" />
+                      </svg>
+                    </span>
+
+                    <span>
+                      <strong>Phone</strong>
+                      <small>+351 927 387 851</small>
+                    </span>
+
+                    <b>↗</b>
+                  </a>
+
+                  <a href="williamssunday714@gmail.com">
+                    <span class="HUMAN-CONTACT-optionIcon">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M4 6.5h16v11H4z" />
+                        <path d="m4.7 7.3 7.3 5.4 7.3-5.4" />
+                      </svg>
+                    </span>
+
+                    <span>
+                      <strong>Email</strong>
+                      <small>williamssunday714@gmail.com</small>
+                    </span>
+
+                    <b>↗</b>
+                  </a>
+
+                  <a
+                    href="linkedin.com/in/profile-william-sunday"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="HUMAN-CONTACT-optionIcon">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M5.2 9.2v9.3M5.2 5.7v.1" />
+                        <path d="M9.5 18.5V9.2m0 4c.7-2.4 5.8-3.2 5.8 1v4.3m0-4.3V9.2" />
+                      </svg>
+                    </span>
+
+                    <span>
+                      <strong>LinkedIn</strong>
+                      <small>Professional profile</small>
+                    </span>
+
+                    <b>↗</b>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/wili_amsun"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="HUMAN-CONTACT-optionIcon">
+                      <svg viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="16" height="16" rx="5" />
+                        <circle cx="12" cy="12" r="3.4" />
+                        <circle
+                          cx="17.3"
+                          cy="6.8"
+                          r=".7"
+                          class="HUMAN-CONTACT-fill"
+                        />
+                      </svg>
+                    </span>
+
+                    <span>
+                      <strong>Instagram</strong>
+                      <small>@Wili_amsun</small>
+                    </span>
+
+                    <b>↗</b>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- =====================================================
+           CONVERSATIONAL CONTACT FORM
+      ====================================================== -->
+      <div class="HUMAN-CONTACT-chat HUMAN-CONTACT-reveal">
+        <div class="HUMAN-CONTACT-chatTop">
+          <div class="HUMAN-CONTACT-chatPerson">
+            <div class="HUMAN-CONTACT-miniAvatar">
+              <img src="profil.png" alt="" />
+              <i></i>
+            </div>
+
+            <div>
+              <strong>Conversation with Williams</strong>
+
+              <span>
+                <i></i>
+                Available to connect
+              </span>
+            </div>
+          </div>
+
+          <div class="HUMAN-CONTACT-chatActions">
+            <span class="HUMAN-CONTACT-secure">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="10" width="14" height="10" rx="2" />
+                <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+              </svg>
+
+              Private
+            </span>
+
+            <button
+              class="HUMAN-CONTACT-reset"
+              type="button"
+              aria-label="Restart conversation"
+              title="Restart conversation"
+            >
+              <svg viewBox="0 0 24 24">
+                <path d="M20 7v5h-5" />
+                <path d="M18.2 16.3A8 8 0 1 1 19.5 9" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="HUMAN-CONTACT-progress">
+          <div class="HUMAN-CONTACT-progressTop">
+            <span>Conversation progress</span>
+            <strong>
+              <b id="HUMAN-CONTACT-currentStep">1</b>/5
+            </strong>
+          </div>
+
+          <div class="HUMAN-CONTACT-progressTrack">
+            <span id="HUMAN-CONTACT-progressBar"></span>
+          </div>
+        </div>
+
+        <div
+          class="HUMAN-CONTACT-conversation"
+          id="HUMAN-CONTACT-conversation"
+          aria-live="polite"
+        >
+          <div class="HUMAN-CONTACT-message HUMAN-CONTACT-message--received">
+            <div class="HUMAN-CONTACT-messageAvatar">
+              <img src="profil.png" alt="" />
+            </div>
+
+            <div>
+              <span class="HUMAN-CONTACT-messageName">Williams</span>
+
+              <div class="HUMAN-CONTACT-bubble">
+                Hello👋! Thank you for stopping by.
+              </div>
+            </div>
+          </div>
+
+          <div class="HUMAN-CONTACT-message HUMAN-CONTACT-message--received">
+            <div class="HUMAN-CONTACT-messageAvatar">
+              <img src="profil.png" alt="" />
+            </div>
+
+            <div>
+              <span class="HUMAN-CONTACT-messageName">Williams</span>
+
+              <div class="HUMAN-CONTACT-bubble">
+                What would you like us  to discuss?
+              </div>
+            </div>
+          </div>
+
+          <div class="HUMAN-CONTACT-typing" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <!--
+          The conversation collects the form values below.
+
+          Connect this form to EmailJS, Formspree, Web3Forms,
+          Netlify Forms or your own backend.
+        -->
+        <form class="HUMAN-CONTACT-form" id="HUMAN-CONTACT-form" novalidate>
+          <!-- Web3Forms configuration: added without changing the design -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="55c99321-762c-44bf-a5aa-9faa308acfd4"
+          />
+
+          <input
+            type="hidden"
+            name="subject"
+            id="HUMAN-CONTACT-web3Subject"
+            value="New portfolio contact message"
+          />
+
+          <input
+            type="hidden"
+            name="from_name"
+            value="Williams Sunday Portfolio"
+          />
+
+          <input
+            type="checkbox"
+            name="botcheck"
+            tabindex="-1"
+            autocomplete="off"
+            style="display: none;"
+          />
+
+          <input
+            type="hidden"
+            name="contact_type"
+            id="HUMAN-CONTACT-typeValue"
+          />
+
+          <input
+            type="hidden"
+            name="name"
+            id="HUMAN-CONTACT-nameValue"
+          />
+
+          <input
+            type="hidden"
+            name="email"
+            id="HUMAN-CONTACT-emailValue"
+          />
+
+          <input
+            type="hidden"
+            name="message"
+            id="HUMAN-CONTACT-messageValue"
+          />
+
+          <input
+            type="hidden"
+            name="reply_method"
+            id="HUMAN-CONTACT-replyValue"
+          />
+
+          <!-- STEP 1 -->
+          <div
+            class="HUMAN-CONTACT-step is-active"
+            data-step="1"
+            data-question="What would you like us to discuss?"
+          >
+            <div class="HUMAN-CONTACT-choiceGrid">
+              <button
+                type="button"
+                data-value="A website or design project"
+                data-short-value="Project"
+              >
+                <span class="HUMAN-CONTACT-choiceIcon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16v12H4z" />
+                    <path d="M4 9h16M7 7.5h.1M10 7.5h.1" />
+                  </svg>
+                </span>
+
+                <span>
+                  <strong>A creative project</strong>
+                  <small>Website, design or digital experience</small>
+                </span>
+
+                <b>→</b>
+              </button>
+
+              <button
+                type="button"
+                data-value="A job or professional opportunity"
+                data-short-value="Opportunity"
+              >
+                <span class="HUMAN-CONTACT-choiceIcon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 8h16v11H4z" />
+                    <path d="M9 8V5h6v3M4 12h16" />
+                  </svg>
+                </span>
+
+                <span>
+                  <strong>A professional opportunity</strong>
+                  <small>Job, internship or contract role</small>
+                </span>
+
+                <b>→</b>
+              </button>
+
+              <button
+                type="button"
+                data-value="A collaboration or partnership"
+                data-short-value="Collaboration"
+              >
+                <span class="HUMAN-CONTACT-choiceIcon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="m9 15 6-6" />
+                    <path d="M8.5 13.5 5 17a2.8 2.8 0 0 0 4 4l3.5-3.5" />
+                    <path d="m15.5 10.5 3.5-3.5a2.8 2.8 0 0 0-4-4l-3.5 3.5" />
+                  </svg>
+                </span>
+
+                <span>
+                  <strong>A collaboration</strong>
+                  <small>Partnership, community or creative idea</small>
+                </span>
+
+                <b>→</b>
+              </button>
+
+              <button
+                type="button"
+                data-value="A general conversation"
+                data-short-value="General conversation"
+              >
+                <span class="HUMAN-CONTACT-choiceIcon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
+                  </svg>
+                </span>
+
+                <span>
+                  <strong>Just saying hello</strong>
+                  <small>Questions or general conversation</small>
+                </span>
+
+                <b>→</b>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div
+            class="HUMAN-CONTACT-step"
+            data-step="2"
+            data-question="Wonderful😊. What should I call you?"
+          >
+            <label for="HUMAN-CONTACT-nameInput">
+              Your name
+            </label>
+
+            <div class="HUMAN-CONTACT-inputShell">
+              <span>
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="3.5" />
+                  <path d="M5 20c.5-4.5 2.8-6.8 7-6.8s6.5 2.3 7 6.8" />
+                </svg>
+              </span>
+
+              <input
+                type="text"
+                id="HUMAN-CONTACT-nameInput"
+                placeholder="Enter your name"
+                autocomplete="name"
+              />
+
+              <button type="button" class="HUMAN-CONTACT-next">
+                Continue
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M14 7l5 5-5 5" />
+                </svg>
+              </button>
+            </div>
+
+            <small class="HUMAN-CONTACT-error">
+              Please tell me your name.
+            </small>
+          </div>
+
+          <!-- STEP 3 -->
+          <div
+            class="HUMAN-CONTACT-step"
+            data-step="3"
+            data-question="And what is the best email address to reach you?"
+          >
+            <label for="HUMAN-CONTACT-emailInput">
+              Email address
+            </label>
+
+            <div class="HUMAN-CONTACT-inputShell">
+              <span>
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 6.5h16v11H4z" />
+                  <path d="m4.7 7.3 7.3 5.4 7.3-5.4" />
+                </svg>
+              </span>
+
+              <input
+                type="email"
+                id="HUMAN-CONTACT-emailInput"
+                placeholder="you@example.com"
+                autocomplete="email"
+              />
+
+              <button type="button" class="HUMAN-CONTACT-next">
+                Continue
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M14 7l5 5-5 5" />
+                </svg>
+              </button>
+            </div>
+
+            <small class="HUMAN-CONTACT-error">
+              Please enter a valid email address.
+            </small>
+          </div>
+
+          <!-- STEP 4 -->
+          <div
+            class="HUMAN-CONTACT-step"
+            data-step="4"
+            data-question="Tell me a little more. What would you like me to know?"
+          >
+            <div class="HUMAN-CONTACT-messageInputTop">
+              <label for="HUMAN-CONTACT-messageInput">
+                Your message
+              </label>
+
+              <span>
+                <b id="HUMAN-CONTACT-messageCount">0</b>/800
+              </span>
+            </div>
+
+            <div class="HUMAN-CONTACT-textareaShell">
+              <textarea
+                id="HUMAN-CONTACT-messageInput"
+                maxlength="800"
+                placeholder="Share your idea, opportunity, question or the experience you would like to create..."
+              ></textarea>
+
+              <div class="HUMAN-CONTACT-prompts">
+                <button
+                  type="button"
+                  data-prompt="I would like to discuss a website or digital design project..."
+                >
+                  Website
+                </button>
+
+                <button
+                  type="button"
+                  data-prompt="I am contacting you regarding a professional opportunity..."
+                >
+                  Opportunity
+                </button>
+
+                <button
+                  type="button"
+                  data-prompt="I would like to explore a collaboration with you..."
+                >
+                  Collaboration
+                </button>
+              </div>
+            </div>
+
+            <small class="HUMAN-CONTACT-error">
+              Please write at least 20 characters.
+            </small>
+
+            <button
+              type="button"
+              class="HUMAN-CONTACT-messageContinue HUMAN-CONTACT-next"
+            >
+              Continue
+
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M14 7l5 5-5 5" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- STEP 5 -->
+          <div
+            class="HUMAN-CONTACT-step"
+            data-step="5"
+            data-question="How would you prefer me to respond?"
+          >
+            <div class="HUMAN-CONTACT-replyChoices">
+              <button
+                type="button"
+                data-value="Email"
+              >
+                <span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 6.5h16v11H4z" />
+                    <path d="m4.7 7.3 7.3 5.4 7.3-5.4" />
+                  </svg>
+                </span>
+
+                <strong>Email</strong>
+                <small>Reply to your inbox</small>
+              </button>
+
+              <button
+                type="button"
+                data-value="Phone"
+              >
+                <span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8.4 3.5 5.6 4.8a2 2 0 0 0-1.1 2.3c1.5 6.1 6.3 10.9 12.4 12.4a2 2 0 0 0 2.3-1.1l1.3-2.8a1.5 1.5 0 0 0-.5-1.8l-3.1-2.3a1.5 1.5 0 0 0-1.9.1l-1.4 1.4A12.1 12.1 0 0 1 9 8.4L10.4 7a1.5 1.5 0 0 0 .1-1.9L8.2 4a1.5 1.5 0 0 0-1.8-.5Z" />
+                  </svg>
+                </span>
+
+                <strong>Phone</strong>
+                <small>Continue by telephone</small>
+              </button>
+
+              <button
+                type="button"
+                data-value="LinkedIn"
+              >
+                <span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5.2 9.2v9.3M5.2 5.7v.1" />
+                    <path d="M9.5 18.5V9.2m0 4c.7-2.4 5.8-3.2 5.8 1v4.3m0-4.3V9.2" />
+                  </svg>
+                </span>
+
+                <strong>LinkedIn</strong>
+                <small>Professional message</small>
+              </button>
+            </div>
+          </div>
+
+          <!-- FINAL -->
+          <div class="HUMAN-CONTACT-step" data-step="6">
+            <div class="HUMAN-CONTACT-summary">
+              <span class="HUMAN-CONTACT-summaryIcon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 3 14 8l5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" />
+                </svg>
+              </span>
+
+              <div>
+                <span>Everything looks ready</span>
+                <h3>Send your message?</h3>
+                <p>
+                  Your details will only be used to respond to this conversation.
+                </p>
+              </div>
+            </div>
+
+            <div class="HUMAN-CONTACT-summaryDetails">
+              <div>
+                <span>Conversation</span>
+                <strong id="HUMAN-CONTACT-summaryType">—</strong>
+              </div>
+
+              <div>
+                <span>Name</span>
+                <strong id="HUMAN-CONTACT-summaryName">—</strong>
+              </div>
+
+              <div>
+                <span>Email</span>
+                <strong id="HUMAN-CONTACT-summaryEmail">—</strong>
+              </div>
+
+              <div>
+                <span>Preferred reply</span>
+                <strong id="HUMAN-CONTACT-summaryReply">—</strong>
+              </div>
+            </div>
+
+            <label class="HUMAN-CONTACT-consent">
+              <input type="checkbox" id="HUMAN-CONTACT-consent" />
+
+              <span class="HUMAN-CONTACT-checkbox">
+                <svg viewBox="0 0 24 24">
+                  <path d="m6.5 12 3.5 3.5 7.5-8" />
+                </svg>
+              </span>
+
+              <span>
+                I agree that my details may be used to respond to this message.
+              </span>
+            </label>
+
+            <button class="HUMAN-CONTACT-submit" type="submit">
+              <span class="HUMAN-CONTACT-submitGlow"></span>
+
+              <span class="HUMAN-CONTACT-submitDefault">
+                <span>
+                  <strong>Send message</strong>
+                  <small>Start the conversation</small>
+                </span>
+
+                <svg viewBox="0 0 24 24">
+                  <path d="m4 4 17 8-17 8 3-8-3-8Z" />
+                  <path d="M7 12h14" />
+                </svg>
+              </span>
+
+              <span class="HUMAN-CONTACT-submitLoading">
+                <i></i>
+                Sending message
+              </span>
+
+              <span class="HUMAN-CONTACT-submitSuccess">
+                <svg viewBox="0 0 24 24">
+                  <path d="m5 12 4.5 4.5L19 7" />
+                </svg>
+
+                Message ready
+              </span>
+            </button>
+
+            <small class="HUMAN-CONTACT-submitError"></small>
+          </div>
+
+          <div class="HUMAN-CONTACT-navigation">
+            <button
+              class="HUMAN-CONTACT-back"
+              type="button"
+              disabled
+            >
+              <svg viewBox="0 0 24 24">
+                <path d="M19 12H5M10 7l-5 5 5 5" />
+              </svg>
+
+              Previous
+            </button>
+
+            <span>
+              One thoughtful conversation can begin something meaningful.
+            </span>
+          </div>
+        </form>
       </div>
     </div>
+
+    <div class="HUMAN-CONTACT-footer HUMAN-CONTACT-reveal">
+      <div>
+        <svg viewBox="0 0 24 24">
+          <path d="M12 3 5 6v5c0 4.8 2.8 8.1 7 10 4.2-1.9 7-5.2 7-10V6l-7-3Z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+
+        <span>
+          <strong>Your privacy matters.</strong>
+          Your information is used only to respond to your enquiry.
+        </span>
+      </div>
+
+      <button
+        type="button"
+        class="HUMAN-CONTACT-copyEmail"
+        data-email="williamssunday714@gmail.com"
+      >
+        <span>
+          <small>Prefer email?</small>
+          <strong>williamssunday714@gmail.com</strong>
+        </span>
+
+        <svg viewBox="0 0 24 24">
+          <rect x="8" y="8" width="11" height="11" rx="2" />
+          <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" />
+        </svg>
+      </button>
+    </div>
   </div>
+
+
+<!--FOOTER SECTION-->
+
+
+
+<footer class="PORTFOOT-footer">
+
+  <div class="PORTFOOT-card">
+
+    <!-- Decorative background -->
+    <div class="PORTFOOT-decoration" aria-hidden="true">
+
+      <span class="PORTFOOT-glow PORTFOOT-glow-one"></span>
+      <span class="PORTFOOT-glow PORTFOOT-glow-two"></span>
+
+      <span class="PORTFOOT-particle PORTFOOT-particle-one"></span>
+      <span class="PORTFOOT-particle PORTFOOT-particle-two"></span>
+      <span class="PORTFOOT-particle PORTFOOT-particle-three"></span>
+      <span class="PORTFOOT-particle PORTFOOT-particle-four"></span>
+
+      <div class="PORTFOOT-wave PORTFOOT-wave-one"></div>
+      <div class="PORTFOOT-wave PORTFOOT-wave-two"></div>
+
+    </div>
+
+
+    <!-- FLOWER POT -->
+    <div class="PORTFOOT-plant-area" aria-hidden="true">
+
+      <div class="PORTFOOT-plant">
+
+        <span class="PORTFOOT-stem PORTFOOT-stem-one"></span>
+        <span class="PORTFOOT-stem PORTFOOT-stem-two"></span>
+        <span class="PORTFOOT-stem PORTFOOT-stem-three"></span>
+        <span class="PORTFOOT-stem PORTFOOT-stem-four"></span>
+
+        <span class="PORTFOOT-leaf PORTFOOT-leaf-one"></span>
+        <span class="PORTFOOT-leaf PORTFOOT-leaf-two"></span>
+        <span class="PORTFOOT-leaf PORTFOOT-leaf-three"></span>
+        <span class="PORTFOOT-leaf PORTFOOT-leaf-four"></span>
+        <span class="PORTFOOT-leaf PORTFOOT-leaf-five"></span>
+        <span class="PORTFOOT-leaf PORTFOOT-leaf-six"></span>
+        <span class="PORTFOOT-leaf PORTFOOT-leaf-seven"></span>
+
+        <div class="PORTFOOT-pot">
+
+          <span class="PORTFOOT-pot-shine"></span>
+
+          <div class="PORTFOOT-pot-face">
+            <span class="PORTFOOT-eye PORTFOOT-eye-left"></span>
+            <span class="PORTFOOT-eye PORTFOOT-eye-right"></span>
+            <span class="PORTFOOT-smile"></span>
+          </div>
+
+        </div>
+
+        <span class="PORTFOOT-pot-shadow"></span>
+
+      </div>
+
+    </div>
+
+
+    <!-- MAIN FOOTER CONTENT -->
+    <div class="PORTFOOT-content">
+
+      <div class="PORTFOOT-introduction">
+
+        <span class="PORTFOOT-small-label">
+          <i class="fa-solid fa-sparkles"></i>
+          Thanks for visiting
+        </span>
+
+        <h2>
+          <span>Congratulation!</span> You made it to the end<b class="emoji">🤗</b>
+        </h2>
+
+        <p>
+          Designed with care, creativity and a focus on memorable
+          experiences.
+        </p>
+
+      </div>
+
+
+      <!-- QUICK LINKS -->
+      <div class="PORTFOOT-navigation"
+        aria-label="Footer navigation"
+      >
+
+        <span class="PORTFOOT-group-title">
+          Quick Links
+        </span>
+
+        <div class="PORTFOOT-link-list">
+
+          <a href="#home" class="PORTFOOT-link">
+            <span class="PORTFOOT-link-icon">
+              <i class="fa-solid fa-house"></i>
+            </span>
+            <small>Home</small>
+          </a>
+
+          <a href="#about" class="PORTFOOT-link">
+            <span class="PORTFOOT-link-icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <small>About</small>
+          </a>
+
+          <a href="#skills" class="PORTFOOT-link">
+            <span class="PORTFOOT-link-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </span>
+            <small>Skills</small>
+          </a>
+
+          <a href="#experience" class="PORTFOOT-link">
+            <span class="PORTFOOT-link-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </span>
+            <small>Experience</small>
+          </a>
+
+          <a href="#portfolio" class="PORTFOOT-link">
+            <span class="PORTFOOT-link-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <small>Portfolio</small>
+          </a>
+
+          <a href="#contact" class="PORTFOOT-link">
+            <span class="PORTFOOT-link-icon">
+              <i class="fa-solid fa-paper-plane"></i>
+            </span>
+            <small>Contact</small>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- SOCIALS -->
+      <div class="PORTFOOT-social-area">
+
+        <span class="PORTFOOT-group-title">
+          Follow Me
+        </span>
+
+        <div class="PORTFOOT-social-list">
+
+          <a
+            href="#"
+            class="PORTFOOT-social-link"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="#"
+            class="PORTFOOT-social-link"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="#"
+            class="PORTFOOT-social-link"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="#"
+            class="PORTFOOT-social-link"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="mailto:your@email.com"
+            class="PORTFOOT-social-link"
+            aria-label="Email"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="PORTFOOT-bottom">
+
+      <p>
+        © <span class="PORTFOOT-current-year">2026</span>
+        Williams Sunday. All rights reserved.
+      </p>
+
+      <div class="PORTFOOT-built">
+
+        <span class="PORTFOOT-status-dot"></span>
+
+        <span>
+          Original source Design
+        </span>
+
+      </div>
+
+      <button
+        class="PORTFOOT-go-up"
+        type="button"
+        aria-label="Return to the top of the page"
+      >
+        <span class="PORTFOOT-go-up-ring"></span>
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+        <small>Top</small>
+      </button>
+
+    </div>
+
+  </div>
+
+</footer>
+
 </section>
 
 
 
 
 
-
-<footer class="footer-qualify">
-  
-
-  <div class="footer-qualify-content">
-   
-    <div class="footer-qualify-col contact">
-     <img src="my logo .png" alt="Logo" class="footer-qualify-logo" />
-
-    </div>
-
-    <div class="footer-qualify-col width">
-      <h3>Links</h3>
-      <ul class="quick-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-qualify-col">
-      <h3>Services</h3>
-      <ul>
-        <li><a href="#">Admin assistant</a></li>
-        <li><a href="#">Website Design</a></li>
-        <li><a href="#">Graphic Design</a></li>
-        <li><a href="#">IT Support</a></li>
-        <li><a href="#">Waiter</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-qualify-col">
-      <h3>Resources</h3>
-      <ul>
-        <li><a href="#">Check Certificates</a></li>
-        <li><a href="#">Download CV</a></li>
-        <li><a href="#">See Projects</a></li>
-        <li><a href="#">Reference</a></li>
-
-      </ul>
-    </div>
-
-    <div class="footer-qualify-col follow">
-      <h3>Follow Me</h3>
-      <div class="footer-qualify-social">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-qualify-bottom">
-    <p>© 2023 Original design by Williams</p>
-    <div class="footer-qualify-bottom-links">
-      <a href="#">Privacy</a>
-      <span>•</span>
-      <a href="#">Terms of use</a>
-      <span>•</span>
-      <a href="#">Site Map</a>
-    </div>
-  </div>
-</footer>
-
-
-
-
 </div>
-  
-
-
-
-
-
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  
-  <script>
-
-
-const form = document.getElementById('form');
-const circle = document.querySelector('.circle-bg');
-const formSection = document.getElementById('formSection');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  circle.classList.add('slide-rightw');
-  formSection.classList.add('slide-leftw');
-
-  setTimeout(() => {
-    circle.classList.remove('slide-rightw');
-    formSection.classList.remove('slide-leftw');
-
-    const formData = new FormData(form);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => window.location.href = "/sent.html")
-      .catch((error) => alert("Error submitting form: " + error));
-  }, 2000);
-});
-
-
-
-// Open modal
-document.querySelectorAll('.qualify-modal-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
-    const modalId = this.getAttribute('data-modal');
-    const modal = document.getElementById(modalId);
-    if (modal) modal.style.display = 'flex';
-  });
-});
-
-// Close modal when clicking × or outside
-document.querySelectorAll('.qualify-modal').forEach(modal => {
-  modal.addEventListener('click', e => {
-    if (e.target.classList.contains('qualify-close') || e.target === modal) {
-      modal.style.display = 'none';
-    }
-  });
-});
-
-
-  const qualifyItems = document.querySelectorAll('.qualify-mother');
-
-  const revealOnScroll = () => {
-    const triggerBottom = window.innerHeight * 0.85;
-
-    qualifyItems.forEach(item => {
-      const boxTop = item.getBoundingClientRect().top;
-      if (boxTop < triggerBottom) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
-    });
-  };
-
-  window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll();
-
-
-
-
-const skills = document.querySelectorAll(".compet-skill");
-
-let index = 0;
-function animateSkills() {
-  skills.forEach((s, i) => {
-    s.style.transitionDelay = `${i * 0.2}s`;
-    s.style.opacity = "1";
-    s.style.transform = "scale(1)";
-  });
-
-  setTimeout(() => {
-    skills.forEach((s) => {
-      s.style.opacity = "0.6";
-      s.style.transform = "scale(0.9)";
-    });
-    setTimeout(animateSkills, 1500);
-  }, 2500);
-}
-
-animateSkills();
-
-
-
-const header = document.querySelector("header"); // Use your actual header selector if needed
-let lastScrollTop = 0;
-const scrollThreshold = 10; // Minimum scroll distance before triggering animation
-
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (Math.abs(currentScroll - lastScrollTop) > scrollThreshold) {
-    if (currentScroll > lastScrollTop) {
-      // Scrolling down → hide header
-      header.classList.add("hide-header");
-      header.classList.remove("show-header");
-    } else {
-      // Scrolling up → show header
-      header.classList.add("show-header");
-      header.classList.remove("hide-header");
-    }
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-  }
-});
-
-
-    
-const reviewers = document.querySelectorAll(".reviewer-item");
-const reviewertx = document.querySelectorAll(".name");
-const texts = document.querySelectorAll(".review-text");
-const list = document.querySelector(".reviewer-list");
-let current = 0;
-
-function slideDown() {
-  // Remove active state from current
-  texts[current].classList.remove("active");
-  reviewers[current].style.opacity = "0";
-  reviewers[current].style.transform = "translateY(-90px) translateX(0px) ";
-  reviewers[current].style.left = "50%";
-
-
-
-  // Move top one to bottom after transition
-  setTimeout(() => {
-    list.appendChild(reviewers[current]);
-    reviewers[current].style.transform = "translateY(0) ";
-    reviewers[current].style.opacity = "0.6";
-    current = (current + 1) % reviewers.length;
-
-    // Set active for next
-    reviewers.forEach((rev, i) => {
-      if (i === current) {
-        rev.style.opacity = "1";
-        reviewers[i].style.transform = "scale(1) ";
-
-
-      } else {
-        rev.style.opacity = "0.6";
-        reviewers[i].style.transform = "scale(0.8) translateX(-20px)";
-
-
-
-        
-      }
-    });
-
-    texts.forEach((t, i) => t.classList.toggle("active", i === current));
-  }, 600);
-}
-
-setInterval(slideDown, 5000);
-
-
-    const hamburger = document.getElementById('hamburger');
-    const sideMenu = document.getElementById('sideMenu');
-    const closeBtn = document.getElementById('closeBtn');
-    const openBtn = document.querySelector('.hamburger');
-    const contentWrapper = document.querySelector('.content-wrapper');
-
-    hamburger.addEventListener('click', () => {
-      sideMenu.style.left = '0';
-      contentWrapper.classList.add('dimmed'); 
-      document.body.style.backgroundColor = "black";
-      openBtn.classList.add('tot');// only dim page content
-    });
-
-    closeBtn.addEventListener('click', () => {
-      sideMenu.style.left = '-100%';
-      contentWrapper.classList.remove('dimmed');
-      document.body.style.backgroundColor = "";
-      openBtn.classList.remove('tot');
-    });
-
-    // Optional: Close menu when clicking outside
-    window.addEventListener('click', (e) => {
-      if(e.target === sideMenu){
-        sideMenu.style.left = '-100%';
-        contentWrapper.classList.remove('dimmed');
-      }
-    });
-
-    // Optional: Change navbar background on scroll
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('nav');
-      if(window.scrollY > 50){
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-    });
-
-
-
- 
-
-
- 
-    function formatValue(raw, format, suffix){
-      if(format === 'percent') return Math.round(raw) + '%';
-      return Math.round(raw) + (suffix || '');
-    }
-
-    function animateCount(el, target, format){
-      const duration = 1100 + Math.random()*500;
-      const start = performance.now();
-      const from = 0;
-      const suffix = el.dataset.suffix || '';
-      function step(now){
-        const t = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - t, 3);
-        const value = from + eased * (target - from);
-        el.textContent = formatValue(value, format, suffix);
-        if(t < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('is-visible');
-          const num = entry.target.querySelector('.num');
-          if(num){
-            const rawTarget = Number(num.dataset.target) || 0;
-            const fmt = num.dataset.format || 'int';
-            animateCount(num, rawTarget, fmt);
-          }
-        }
-      });
-    },{threshold:0.18});
-
-    document.querySelectorAll('.reveals').forEach(el => observer.observe(el));
-
-    
-
-     const titles = document.querySelectorAll('.experience-title');
-  const contents = document.querySelectorAll('.experience-content');
-  const modal = document.getElementById('experienceModal');
-  const modalContent = document.getElementById('modalContent');
-
-  titles.forEach(title => {
-    title.addEventListener('click', () => {
-      const id = title.dataset.id;
-
-      // Remove active from all
-      titles.forEach(t => t.classList.remove('active'));
-      contents.forEach(c => c.classList.remove('active'));
-
-      // Set active
-      title.classList.add('active');
-
-      if(window.innerWidth > 701){
-        document.querySelector(`.experience-content[data-id='${id}']`).classList.add('active');
-      } else {
-        // For mobile: show modal
-        const content = document.querySelector(`.experience-content[data-id='${id}']`);
-        modalContent.innerHTML = `<span class="modal-close" onclick="closeModal()">&times;</span>` + content.innerHTML;
-        modal.style.display = 'flex';
-      }
-    });
-  });
-
-  function closeModal(){
-    modal.style.display = 'none';
-  }
-
-  /*
-  const contentContainer = document.querySelector('.experience-content-container');
-  window.addEventListener('scroll', () => {
-    if(window.innerWidth > 701){
-      const top = contentContainer.offsetTop;
-      const height = contentContainer.offsetHeight;
-      const scrollY = window.scrollY;
-      if(scrollY >= top && scrollY < top + height - window.innerHeight){
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = 'auto';
-      }
-    }
-  });
-  */
-
-/*
-    function animateSkillBars(entries) {
-    entries.forEach(entry => {
-      const skills = entry.target.querySelectorAll('.skill');
-      
-      if (entry.isIntersecting) {
-
-        
-        skills.forEach(skill => {
-          const progress = skill.querySelector('.skill-progress');
-          const percent = skill.querySelector('.skill-percent');
-          const target = +percent.getAttribute('data-target');
-
-          
-          progress.style.width = "0";
-          percent.textContent = "0%";
-
-        
-          let count = 0;
-          const step = Math.ceil(target / 50);
-          const interval = setInterval(() => {
-            count += step;
-            if (count >= target) {
-              count = target;
-              clearInterval(interval);
-            }
-            percent.textContent = count + '%';
-          }, 40);
-
-          
-          setTimeout(() => {
-            progress.style.width = target + "%";
-          }, 50);
-        });
-      } else {
-        
-        skills.forEach(skill => {
-          const progress = skill.querySelector('.skill-progress');
-          const percent = skill.querySelector('.skill-percent');
-          progress.style.width = "0";
-          percent.textContent = "0%";
-        });
-      }
-    });
-  }
-
-  const skillObserver = new IntersectionObserver(animateSkillBars, {
-    threshold: 0.3
-  });
-
-  skillObserver.observe(document.querySelector('.skill-container'));
-
-*/
-
-  document.addEventListener('DOMContentLoaded', () => {
-      if(typeof AOS !== 'undefined'){ AOS.init({once:true,duration:600}); }
-
-      const track=document.getElementById('track'),prevBtn=document.getElementById('prev'),nextBtn=document.getElementById('next'),dotsWrap=document.getElementById('dots'),filters=document.querySelectorAll('.filter'),carouselWrap=document.getElementById('carousel');
-
-      let cards=Array.from(track.children);let index=0;let pageCount=1;let autoInterval=null;const AUTO_DELAY=3500;
-
-      const io=new IntersectionObserver((entries,obs)=>{entries.forEach(e=>{if(e.isIntersecting){const img=e.target;const src=img.getAttribute('data-src');if(src){img.src=src;img.removeAttribute('data-src');}obs.unobserve(img);}});},{root:null,rootMargin:'200px',threshold:0.01});
-      document.querySelectorAll('img.project-thumb').forEach(i=>io.observe(i));
-
-      function cardWidth(){
-        const card=track.querySelector('.project-card');
-        if(!card) return 36;
-        return card.offsetWidth+16;
-      }
-      function computePageCount(){
-        const visibleW=carouselWrap.offsetWidth-40;
-        const cW=cardWidth();
-        const perView=Math.max(1,Math.floor(visibleW/cW));
-        const visibleCards=cards.filter(c=>c.style.display!=='none');pageCount=Math.max(1,Math.ceil(visibleCards.length/perView));return {perView,visibleCards};}
-      function rebuildDots(){computePageCount();dotsWrap.innerHTML='';for(let i=0;i<pageCount;i++){const d=document.createElement('button');d.className='dot';d.addEventListener('click',()=>{index=i;update();resetAuto();});dotsWrap.appendChild(d);}updateDots();}
-      function updateDots(){Array.from(dotsWrap.children).forEach((d,i)=>d.classList.toggle('active',i===index));}
-      function update(){const cW=cardWidth();track.style.transform=`translateX(${-(index*cW)}px)`;updateDots();}
-      function goNext(){index=Math.min(pageCount-1,index+1);update();}
-      function goPrev(){index=Math.max(0,index-1);update();}
-
-      nextBtn.addEventListener('click',()=>{goNext();resetAuto();});
-      prevBtn.addEventListener('click',()=>{goPrev();resetAuto();});
-
-      function startAuto(){stopAuto();if(pageCount<=1)return;autoInterval=setInterval(()=>{index=(index+1)%pageCount;update();},AUTO_DELAY);}
-      function stopAuto(){if(autoInterval)clearInterval(autoInterval);autoInterval=null;}
-      function resetAuto(){stopAuto();startAuto();}
-
-      carouselWrap.addEventListener('mouseenter',stopAuto);
-      carouselWrap.addEventListener('mouseleave',startAuto);
-
-      // Swipe
-      let pointerDown=false,startX=0,scrollStart=0;
-      carouselWrap.addEventListener('pointerdown',e=>{pointerDown=true;startX=e.clientX;scrollStart=-index*cardWidth();track.style.transition='none';});
-      carouselWrap.addEventListener('pointermove',e=>{if(!pointerDown)return;const dx=e.clientX-startX;track.style.transform=`translateX(${scrollStart+dx}px)`;});
-      function endPointer(e){if(!pointerDown)return;pointerDown=false;track.style.transition='transform .45s cubic-bezier(.22,.9,.32,1)';const dx=e.clientX-startX;const threshold=cardWidth()/4;if(Math.abs(dx)>threshold){if(dx<0)index=Math.min(pageCount-1,index+1);else index=Math.max(0,index-1);}update();}
-      carouselWrap.addEventListener('pointerup',endPointer);
-      carouselWrap.addEventListener('pointercancel',endPointer);
-
-      // Keyboard navigation
-      document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){goNext();resetAuto();}else if(e.key==='ArrowLeft'){goPrev();resetAuto();}});
-
-      filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const cat=btn.dataset.cat;cards.forEach(c=>{c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none';});cards=Array.from(track.children);index=0;rebuildDots();update();resetAuto();}));
-
-      let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{rebuildDots();update();},150);});
-
-      rebuildDots();update();startAuto();
-    });
-
-    // === Scroll Animation Script ===
-window.addEventListener("scroll", function () {
-  const elements = document.querySelectorAll(
-    ".slide-left, .slide-right, .fade-up, .zoom-in"
-  );
-
-  const triggerBottom = window.innerHeight * 0.85;
-
-  elements.forEach((el, index) => {
-    const elTop = el.getBoundingClientRect().top;
-    const delay = index * 0.1; // small staggered timing
-
-    if (elTop < triggerBottom) {
-      el.style.transitionDelay = `${delay}s`;
-      el.classList.add("animate");
-    } else {
-      el.classList.remove("animate");
-    }
-  });
-});
-
-
-
-//TYPING EFFECT
-   
-// Terminal Text Effect
-const roles = [
-  "Web Designer.",
-  "Customer Service.",
-  "Waiter.",
-  "Hospitality Service.",
-  "Visual Design.",
-
-
-
-];
-
-let roleIndex = 0;
-let charIndex = 0;
-let typingSpeed = 100; // ms per character
-let delayBetweenRoles = 2000; // delay before next role
-
-const terminalText = document.querySelector(".terminal-text");
-
-function typeRole() {
-  const currentRole = roles[roleIndex];
-  
-  if(charIndex < currentRole.length) {
-    terminalText.textContent += currentRole.charAt(charIndex);
-    charIndex++;
-    setTimeout(typeRole, typingSpeed);
-  } else {
-    setTimeout(eraseRole, delayBetweenRoles);
-  }
-}
-
-function eraseRole() {
-  const currentRole = roles[roleIndex];
-  
-  if(charIndex > 0) {
-    terminalText.textContent = currentRole.substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(eraseRole, typingSpeed / 2);
-  } else {
-    roleIndex = (roleIndex + 1) % roles.length;
-    setTimeout(typeRole, typingSpeed);
-  }
-}
-
-// Start typing effect
-typeRole();
-
-
-
-  </script>
-
-
+  <script src="index.js"></script>
 
 
 </body>
