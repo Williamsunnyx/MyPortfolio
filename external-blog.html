@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================
+        META
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <meta
+        name="description"
+        content="Premium Featured Blog Slider">
+
+    <meta
+        name="theme-color"
+        content="#0d1117">
+
+    <title>
+        Featured Stories
+    </title>
+
+    <!-- ==========================================
+        GOOGLE FONTS
+    =========================================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ==========================================
+        CSS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+        LOADER
+    =========================================== -->
+
+    <div id="loader">
+
+        <span class="loader-ring"></span>
+
+    </div>
+
+    <!-- ==========================================
+        GLOBAL BACKGROUND
+    =========================================== -->
+
+    <div class="background">
+
+        <span class="gradient gradient-1"></span>
+
+        <span class="gradient gradient-2"></span>
+
+        <span class="gradient gradient-3"></span>
+
+        <span class="blur blur-1"></span>
+
+        <span class="blur blur-2"></span>
+
+        <span class="noise"></span>
+
+    </div>
+
+    <!-- ==========================================
+        PAGE WRAPPER
+    =========================================== -->
+
+    <div class="page">
+
+ <!-- ==========================================================
+     PART 2
+     PREMIUM HEADER / NAVIGATION
+=========================================================== -->
+
+<header class="header" id="top">
+
+    <!-- Glass Background -->
+    <div class="header-backdrop"></div>
+
+    <div class="header-container">
+
+        <!-- =========================
+             LOGO
+        ========================== -->
+
+        <a href="#top"
+           class="logo"
+           aria-label="Homepage">
+
+            <div class="logo-mark">
+
+                <span class="logo-circle"></span>
+
+                <span class="logo-dot"></span>
+
+            </div>
+
+            <div class="logo-text">
+
+                <span class="logo-title">
+
+                    BlogSpace
+
+                </span>
+
+                <span class="logo-subtitle">
+
+                    Featured Stories
+
+                </span>
+
+            </div>
+
+        </a>
+
+        <!-- =========================
+             DESKTOP NAVIGATION
+        ========================== -->
+
+        <nav class="desktop-nav"
+             aria-label="Primary Navigation">
+
+            <ul class="nav-menu">
+
+                <li>
+                    <a class="active"
+                       href="#top">
+
+                        Home
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#featured">
+
+                        Featured
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#stories">
+
+                        Stories
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#travel">
+
+                        Travel
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#technology">
+
+                        Technology
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+
+                        Contact
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- =========================
+             RIGHT SIDE
+        ========================== -->
+
+        <div class="header-right">
+
+            <!-- Search -->
+
+            <button
+                class="header-icon"
+                aria-label="Search">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+
+                    <line
+                        x1="20"
+                        y1="20"
+                        x2="16.5"
+                        y2="16.5"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+
+                </svg>
+
+            </button>
+
+            <!-- Notifications -->
+
+            <button
+                class="header-icon notification-btn"
+                aria-label="Notifications">
+
+                <span class="notification-badge"></span>
+
+                <svg viewBox="0 0 24 24">
+
+                    <path
+                        d="M18 8A6 6 0 006 8
+                           c0 7-3 9-3 9h18
+                           s-3-2-3-9"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+
+                    <path
+                        d="M10 21a2 2 0 004 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+
+                </svg>
+
+            </button>
+
+            <!-- Theme -->
+
+            <button
+                class="header-icon"
+                id="themeToggle"
+                aria-label="Toggle Theme">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="5"
+                        fill="currentColor"/>
+
+                </svg>
+
+            </button>
+
+            <!-- Profile -->
+
+            <button
+                class="profile-button"
+                aria-label="Profile">
+
+                <img
+                    src="images/avatar.jpg"
+                    alt="Profile">
+
+            </button>
+
+            <!-- Mobile Button -->
+
+            <button
+                class="mobile-toggle"
+                id="mobileToggle"
+                aria-label="Open Navigation"
+                aria-expanded="false">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ======================================
+         MOBILE NAVIGATION
+    ======================================= -->
+
+    <nav
+        class="mobile-nav"
+        id="mobileNav">
+
+        <ul>
+
+            <li>
+
+                <a href="#top">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#featured">
+
+                    Featured
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#stories">
+
+                    Stories
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#travel">
+
+                    Travel
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#technology">
+
+                    Technology
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#contact">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+        <main id="main">
+
+            <!--
+<!-- ==========================================================
+     PART 3.1
+     PREMIUM FEATURED HERO
+========================================================== -->
+
+<section
+    class="featured-section"
+    id="featured">
+
+    <div class="featured-grid">
+
+        <!-- ==========================================
+             HERO CARD
+        =========================================== -->
+
+        <article
+            class="hero-card"
+            id="heroCard">
+
+            <!-- Decorative Background -->
+
+            <div class="hero-background">
+
+                <span class="hero-gradient hero-gradient-1"></span>
+
+                <span class="hero-gradient hero-gradient-2"></span>
+
+                <span class="hero-gradient hero-gradient-3"></span>
+
+                <span class="hero-noise"></span>
+
+            </div>
+
+            <!-- ===============================
+                 HERO GRID
+            ================================ -->
+
+            <div class="hero-layout">
+
+                <!-- ===========================
+                     LEFT CONTENT
+                ============================ -->
+
+                <div
+                    class="hero-content">
+
+                    <!-- Badge -->
+
+                    <div
+                        class="hero-badge">
+
+                        <span
+                            class="badge-dot"></span>
+
+                        <span>
+
+                            FEATURED POST
+
+                        </span>
+
+                    </div>
+
+                    <!-- Category -->
+
+                    <div
+                        class="hero-category">
+
+                        Travel
+
+                    </div>
+
+                    <!-- Heading -->
+
+                    <h1
+                        id="heroTitle"
+                        class="hero-title">
+
+                        Discover The Beautiful Lighthouse
+                        That Watches Over
+                        The Endless Ocean
+
+                    </h1>
+
+                    <!-- Description -->
+
+                    <p
+                        class="hero-description">
+
+                        Explore breathtaking coastlines,
+                        inspiring architecture,
+                        unforgettable destinations,
+                        hidden adventures,
+                        and stories worth sharing.
+
+                    </p>
+
+                    <!-- ===================
+                         META
+                    ==================== -->
+
+                    <div
+                        class="hero-meta">
+
+                        <!-- Author -->
+
+                        <div
+                            class="hero-author">
+
+                            <img
+                                src="images/avatar.jpg"
+                                alt="Author">
+
+                            <div>
+
+                                <h4>
+
+                                    Williams Sunny
+
+                                </h4>
+
+                                <span>
+
+                                    July 18 · 6 min read
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ===================
+                         ACTIONS
+                    ==================== -->
+
+                    <div
+                        class="hero-actions">
+
+                        <button
+                            id="readStory"
+                            class="btn-primary">
+
+                            Read Story
+
+                            <span>
+
+                                →
+
+                            </span>
+
+                        </button>
+
+                        <button
+                            class="btn-outline"
+                            aria-label="Bookmark">
+
+                            <svg
+                                viewBox="0 0 24 24">
+
+                                <path
+                                    d="M6 3h12v18l-6-4-6 4z"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"/>
+
+                            </svg>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+<!-- ==========================================================
+     PART 3.2
+     HERO VISUAL
+========================================================== -->
+
+<div class="hero-visual">
+
+    <!-- ======================================
+         DECORATIVE LAYERS
+    ======================================= -->
+
+    <div class="hero-decoration">
+
+        <!-- Large Red Glow -->
+
+        <span class="glow glow-primary"></span>
+
+        <!-- Soft Glow -->
+
+        <span class="glow glow-secondary"></span>
+
+        <!-- Large Ring -->
+
+        <span class="ring ring-lg"></span>
+
+        <!-- Medium Ring -->
+
+        <span class="ring ring-md"></span>
+
+        <!-- Small Ring -->
+
+        <span class="ring ring-sm"></span>
+
+        <!-- Blur Circle -->
+
+        <span class="blur-circle blur-1"></span>
+
+        <span class="blur-circle blur-2"></span>
+
+        <!-- Floating Dots -->
+
+        <span class="dot dot-1"></span>
+
+        <span class="dot dot-2"></span>
+
+        <span class="dot dot-3"></span>
+
+        <span class="dot dot-4"></span>
+
+        <!-- Decorative Cross -->
+
+        <span class="cross cross-1"></span>
+
+        <span class="cross cross-2"></span>
+
+    </div>
+
+    <!-- ======================================
+         HERO IMAGE WRAPPER
+    ======================================= -->
+
+    <div class="hero-image-wrapper">
+
+        <!-- Floating Badge -->
+
+        <div class="hero-image-badge">
+
+            <span class="badge-live"></span>
+
+            Featured
+
+        </div>
+
+        <!-- Main Image -->
+
+        <figure class="hero-image-frame">
+
+            <img
+
+                id="heroImage"
+
+                class="hero-image"
+
+                src="images/hero.jpg"
+
+                alt="Lighthouse overlooking the sea"
+
+            >
+
+        </figure>
+
+        <!-- Overlay -->
+
+        <div class="hero-overlay">
+
+            <div class="hero-gradient-overlay"></div>
+
+            <div class="hero-shadow-overlay"></div>
+
+        </div>
+
+        <!-- Bottom Information -->
+
+        <div class="hero-image-footer">
+
+            <div class="hero-stat">
+
+                <strong>
+
+                    18K
+
+                </strong>
+
+                <span>
+
+                    Readers
+
+                </span>
+
+            </div>
+
+            <div class="hero-stat">
+
+                <strong>
+
+                    245
+
+                </strong>
+
+                <span>
+
+                    Comments
+
+                </span>
+
+            </div>
+
+            <div class="hero-stat">
+
+                <strong>
+
+                    4.9
+
+                </strong>
+
+                <span>
+
+                    Rating
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ======================================
+         FLOATING ACTION BUTTONS
+    ======================================= -->
+
+    <div class="hero-floating-actions">
+
+        <button
+
+            class="floating-btn"
+
+            id="likeStory"
+
+            aria-label="Like Story">
+
+            ❤
+
+        </button>
+
+        <button
+
+            class="floating-btn"
+
+            id="shareStory"
+
+            aria-label="Share Story">
+
+            ↗
+
+        </button>
+
+        <button
+
+            class="floating-btn"
+
+            id="bookmarkStory"
+
+            aria-label="Bookmark Story">
+
+            🔖
+
+        </button>
+
+    </div>
+
+    <!-- ======================================
+         PROGRESS INDICATOR
+    ======================================= -->
+
+    <div class="hero-progress">
+
+        <div class="hero-progress-track">
+
+            <div
+
+                class="hero-progress-bar"
+
+                id="heroProgressBar">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ======================================
+         SCROLL HINT
+    ======================================= -->
+
+    <div class="scroll-hint">
+
+        <span>
+
+            Scroll
+
+        </span>
+
+        <div class="scroll-line"></div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================================
+END OF PART 3.2
+
+NEXT:
+
+PART 3.3
+
+Starts with
+
+<aside class="stories-sidebar">
+
+========================================================== -->
+
+
+
+
+            </div>
+
+        </article>
+
+        <!-- ==========================================
+             SIDEBAR
+
+             INSERT PART 3.3 HERE
+
+        =========================================== -->
+
+        <!--
+
+        ===================================================
+
+        INSERT PART 3.3 HERE
+
+        Starts with
+
+        <aside class="stories-sidebar">
+
+        ===================================================
+
+        -->
+
+    </div>
+
+    <!-- ==========================================
+         MOBILE CAROUSEL
+
+         INSERT PART 3.4 HERE
+
+    =========================================== -->
+
+    <!--
+
+    INSERT PART 3.4 HERE
+
+    -->
+
+</section>
+
+<!-- ==========================================
+
+PART 3.5 (POPUP)
+
+GOES AFTER </section>
+
+=========================================== -->
+
+        </main>
+
+        <!--
+            PART 6
+
+            POPUP
+
+            WILL BE INSERTED HERE
+        -->
+
+    </div>
+
+    <!-- ==========================================
+        JAVASCRIPT
+    =========================================== -->
+
+    <script src="script.js"></script>
+
+
+    <!-- ==========================================================
+     PART 3.3
+     STORIES SIDEBAR
+========================================================== -->
+
+<aside
+    class="stories-sidebar"
+    id="stories">
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header
+        class="sidebar-header">
+
+        <div>
+
+            <span class="sidebar-label">
+
+                Trending
+
+            </span>
+
+            <h2>
+
+                Top Reads
+
+            </h2>
+
+        </div>
+
+        <button
+            class="sidebar-more">
+
+            View All →
+
+        </button>
+
+    </header>
+
+    <!-- =====================================
+         VERTICAL RECYCLER
+    ====================================== -->
+
+    <div
+        class="stories-window">
+
+        <div
+            class="stories-track"
+            id="storiesTrack">
+
+            <!-- =====================================
+                 STORY 01
+            ====================================== -->
+
+            <article
+                class="story-card active"
+                data-story="0">
+
+                <div class="story-thumb">
+
+                    <img
+                        src="images/thumb1.jpg"
+                        alt="Lighthouse">
+
+                </div>
+
+                <div
+                    class="story-info">
+
+                    <span class="story-category">
+
+                        Travel
+
+                    </span>
+
+                    <h3>
+
+                        Discover The Beautiful Lighthouse
+
+                    </h3>
+
+                    <div class="story-meta">
+
+                        <span>
+
+                            Jul 18
+
+                        </span>
+
+                        <span>
+
+                            •
+
+                        </span>
+
+                        <span>
+
+                            6 min
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- STORY 02 -->
+
+            <article
+                class="story-card"
+                data-story="1">
+
+                <div class="story-thumb">
+
+                    <img
+                        src="images/thumb2.jpg"
+                        alt="Mountain">
+
+                </div>
+
+                <div
+                    class="story-info">
+
+                    <span class="story-category">
+
+                        Nature
+
+                    </span>
+
+                    <h3>
+
+                        Escape Into The Mountains
+
+                    </h3>
+
+                    <div class="story-meta">
+
+                        <span>
+
+                            Jul 21
+
+                        </span>
+
+                        <span>
+
+                            •
+
+                        </span>
+
+                        <span>
+
+                            5 min
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- STORY 03 -->
+
+            <article
+                class="story-card"
+                data-story="2">
+
+                <div class="story-thumb">
+
+                    <img
+                        src="images/thumb3.jpg"
+                        alt="Forest">
+
+                </div>
+
+                <div
+                    class="story-info">
+
+                    <span class="story-category">
+
+                        Lifestyle
+
+                    </span>
+
+                    <h3>
+
+                        Living Slowly In Nature
+
+                    </h3>
+
+                    <div class="story-meta">
+
+                        <span>
+
+                            Jul 26
+
+                        </span>
+
+                        <span>
+
+                            •
+
+                        </span>
+
+                        <span>
+
+                            4 min
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- STORY 04 -->
+
+            <article
+                class="story-card"
+                data-story="3">
+
+                <div class="story-thumb">
+
+                    <img
+                        src="images/thumb4.jpg"
+                        alt="Architecture">
+
+                </div>
+
+                <div
+                    class="story-info">
+
+                    <span class="story-category">
+
+                        Design
+
+                    </span>
+
+                    <h3>
+
+                        Modern Coastal Architecture
+
+                    </h3>
+
+                    <div class="story-meta">
+
+                        <span>
+
+                            Jul 30
+
+                        </span>
+
+                        <span>
+
+                            •
+
+                        </span>
+
+                        <span>
+
+                            7 min
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- STORY 05 -->
+
+            <article
+                class="story-card"
+                data-story="4">
+
+                <div class="story-thumb">
+
+                    <img
+                        src="images/thumb5.jpg"
+                        alt="Beach">
+
+                </div>
+
+                <div
+                    class="story-info">
+
+                    <span class="story-category">
+
+                        Adventure
+
+                    </span>
+
+                    <h3>
+
+                        Beaches You Must Visit
+
+                    </h3>
+
+                    <div class="story-meta">
+
+                        <span>
+
+                            Aug 03
+
+                        </span>
+
+                        <span>
+
+                            •
+
+                        </span>
+
+                        <span>
+
+                            8 min
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer
+        class="sidebar-footer">
+
+        <button
+            id="storyUp"
+            class="story-control">
+
+            ▲
+
+        </button>
+
+        <div
+            class="story-counter">
+
+            <span
+                id="currentStory">
+
+                01
+
+            </span>
+
+            <span>
+
+                /
+
+            </span>
+
+            <span>
+
+                05
+
+            </span>
+
+        </div>
+
+        <button
+            id="storyDown"
+            class="story-control">
+
+            ▼
+
+        </button>
+
+    </footer>
+
+</aside>
+
+<!-- ==========================================================
+END OF PART 3.3
+
+NEXT
+
+PART 3.4
+
+MOBILE CAROUSEL
+
+This is completely redesigned.
+
+Instead of a normal slider...
+
+it behaves exactly like your description:
+
+Desktop
+↓
+
+Cards recycle upward forever
+
+Mobile
+↓
+
+Thumbnails continuously travel sideways.
+
+Whichever thumbnail reaches the CENTER
+becomes the Hero Preview.
+
+Then continues forever.
+
+Exactly like a roller coaster.
+
+========================================================== -->
+
+
+<!-- ==========================================================
+     PART 3.4
+     MOBILE INFINITE CAROUSEL
+========================================================== -->
+
+<section
+    class="mobile-featured"
+    id="mobileFeatured">
+
+    <!-- =====================================
+         TITLE
+    ====================================== -->
+
+    <div class="mobile-featured-header">
+
+        <div>
+
+            <span class="mobile-label">
+
+                Trending Stories
+
+            </span>
+
+            <h2>
+
+                Top Reads
+
+            </h2>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================
+         CAROUSEL WINDOW
+    ====================================== -->
+
+    <div
+        class="mobile-carousel-window">
+
+        <!-- Center Guide -->
+
+        <div
+            class="mobile-center-guide"
+            aria-hidden="true">
+
+        </div>
+
+        <!-- Track -->
+
+        <div
+            class="mobile-carousel-track"
+            id="mobileCarouselTrack">
+
+            <!-- =========================
+                 ITEM 1
+            ========================== -->
+
+            <button
+                class="mobile-card active"
+                data-story="0">
+
+                <img
+                    src="images/thumb1.jpg"
+                    alt="Lighthouse">
+
+            </button>
+
+            <!-- ITEM 2 -->
+
+            <button
+                class="mobile-card"
+                data-story="1">
+
+                <img
+                    src="images/thumb2.jpg"
+                    alt="Mountain">
+
+            </button>
+
+            <!-- ITEM 3 -->
+
+            <button
+                class="mobile-card"
+                data-story="2">
+
+                <img
+                    src="images/thumb3.jpg"
+                    alt="Forest">
+
+            </button>
+
+            <!-- ITEM 4 -->
+
+            <button
+                class="mobile-card"
+                data-story="3">
+
+                <img
+                    src="images/thumb4.jpg"
+                    alt="Architecture">
+
+            </button>
+
+            <!-- ITEM 5 -->
+
+            <button
+                class="mobile-card"
+                data-story="4">
+
+                <img
+                    src="images/thumb5.jpg"
+                    alt="Beach">
+
+            </button>
+
+            <!-- =====================================
+                 LOOP CLONES
+                 (Required for seamless looping)
+            ====================================== -->
+
+            <button
+                class="mobile-card clone"
+                data-story="0"
+                aria-hidden="true">
+
+                <img
+                    src="images/thumb1.jpg"
+                    alt="">
+
+            </button>
+
+            <button
+                class="mobile-card clone"
+                data-story="1"
+                aria-hidden="true">
+
+                <img
+                    src="images/thumb2.jpg"
+                    alt="">
+
+            </button>
+
+            <button
+                class="mobile-card clone"
+                data-story="2"
+                aria-hidden="true">
+
+                <img
+                    src="images/thumb3.jpg"
+                    alt="">
+
+            </button>
+
+            <button
+                class="mobile-card clone"
+                data-story="3"
+                aria-hidden="true">
+
+                <img
+                    src="images/thumb4.jpg"
+                    alt="">
+
+            </button>
+
+            <button
+                class="mobile-card clone"
+                data-story="4"
+                aria-hidden="true">
+
+                <img
+                    src="images/thumb5.jpg"
+                    alt="">
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================
+         PAGINATION
+    ====================================== -->
+
+    <div
+        class="mobile-pagination"
+        id="mobilePagination">
+
+        <span class="page-dot active"></span>
+
+        <span class="page-dot"></span>
+
+        <span class="page-dot"></span>
+
+        <span class="page-dot"></span>
+
+        <span class="page-dot"></span>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+END OF PART 3.4
+
+NEXT
+
+PART 3.5
+
+FULL SCREEN STORY POPUP
+
+Includes
+
+✓ Hero Image
+
+✓ Full Article
+
+✓ Reading Progress
+
+✓ Sources
+
+✓ Related Links
+
+✓ Comments
+
+✓ Like
+
+✓ Bookmark
+
+✓ Share
+
+✓ Copy Link
+
+✓ Keyboard Accessibility
+
+✓ Blur Background
+
+✓ Responsive Layout
+
+========================================================== -->
+
+
+<!-- ==========================================================
+     PART 3.5
+     PREMIUM STORY POPUP
+========================================================== -->
+
+<div
+    class="story-modal"
+    id="storyModal"
+    aria-hidden="true">
+
+    <!-- ===========================
+         BACKDROP
+    ============================ -->
+
+    <div
+        class="story-modal-backdrop"
+        id="storyModalBackdrop">
+
+    </div>
+
+    <!-- ===========================
+         CONTAINER
+    ============================ -->
+
+    <article
+        class="story-modal-container"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle">
+
+        <!-- ======================================
+             TOP BAR
+        ======================================= -->
+
+        <header class="story-modal-header">
+
+            <div class="story-modal-category">
+
+                FEATURED ARTICLE
+
+            </div>
+
+            <button
+                id="closeStoryModal"
+                class="story-close-btn"
+                aria-label="Close Story">
+
+                ✕
+
+            </button>
+
+        </header>
+
+        <!-- ======================================
+             HERO IMAGE
+        ======================================= -->
+
+        <section class="story-modal-hero">
+
+            <img
+
+                id="modalHeroImage"
+
+                src="images/hero.jpg"
+
+                alt="Story Image"
+
+            >
+
+            <div class="story-image-overlay"></div>
+
+        </section>
+
+        <!-- ======================================
+             CONTENT
+        ======================================= -->
+
+        <section class="story-modal-content">
+
+            <h1
+                id="modalTitle">
+
+                Discover The Beautiful Lighthouse
+                That Watches Over The Endless Ocean
+
+            </h1>
+
+            <div class="story-modal-meta">
+
+                <span id="modalAuthor">
+
+                    Williams Sunny
+
+                </span>
+
+                <span>•</span>
+
+                <span id="modalDate">
+
+                    July 18, 2026
+
+                </span>
+
+                <span>•</span>
+
+                <span id="modalReadingTime">
+
+                    6 min read
+
+                </span>
+
+            </div>
+
+            <!-- Reading Progress -->
+
+            <div class="reading-progress">
+
+                <div
+                    class="reading-progress-fill"
+                    id="readingProgressFill">
+
+                </div>
+
+            </div>
+
+            <!-- Story -->
+
+            <div
+                id="modalStory"
+                class="story-body">
+
+                <p>
+
+                    Story text will be injected
+                    automatically from JavaScript.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+             SOURCES
+        ======================================= -->
+
+        <section
+            class="story-sources">
+
+            <h2>
+
+                Sources
+
+            </h2>
+
+            <ul
+                id="storySources">
+
+                <li>
+
+                    Source links inserted dynamically
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ======================================
+             RELATED ARTICLES
+        ======================================= -->
+
+        <section
+            class="related-stories">
+
+            <h2>
+
+                Related Stories
+
+            </h2>
+
+            <div
+                id="relatedStories"
+                class="related-grid">
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+             COMMENTS
+        ======================================= -->
+
+        <section
+            class="story-comments">
+
+            <div class="comments-header">
+
+                <h2>
+
+                    Comments
+
+                </h2>
+
+                <span
+                    id="commentCounter">
+
+                    0
+
+                </span>
+
+            </div>
+
+            <div
+                id="commentList">
+
+            </div>
+
+            <!-- Form -->
+
+            <form
+                id="commentForm"
+                class="comment-form">
+
+                <textarea
+
+                    id="commentInput"
+
+                    rows="5"
+
+                    placeholder="Write your comment...">
+
+                </textarea>
+
+                <button
+                    type="submit">
+
+                    Post Comment
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- ======================================
+             FLOATING ACTION BAR
+        ======================================= -->
+
+        <aside
+            class="story-floating-actions">
+
+            <button
+
+                id="storyLike"
+
+                class="story-action-btn"
+
+                aria-label="Like">
+
+                ❤
+
+            </button>
+
+            <button
+
+                id="storyBookmark"
+
+                class="story-action-btn"
+
+                aria-label="Bookmark">
+
+                🔖
+
+            </button>
+
+            <button
+
+                id="storyShare"
+
+                class="story-action-btn"
+
+                aria-label="Share">
+
+                ↗
+
+            </button>
+
+            <button
+
+                id="storyCopy"
+
+                class="story-action-btn"
+
+                aria-label="Copy Link">
+
+            </button>
+
+        </aside>
+
+    </article>
+
+</div>
+<!-- ==========================================================
+END OF PART 3.5
+END OF COMPLETE HTML
+========================================================== -->
+</body>
+
+</html>
+

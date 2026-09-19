@@ -92,7 +92,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+const progress = document.querySelector(".scroll-progress");
 
+window.addEventListener("scroll", () => {
+
+    const scrollTop = window.scrollY;
+
+    const pageHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+    const scrollPercent = (scrollTop / pageHeight) * 100;
+
+    progress.style.width = `${scrollPercent}%`;
+
+});
 
   /* =====================================================
      MOBILE MENU

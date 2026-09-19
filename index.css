@@ -1,4 +1,19 @@
 
+.scroll-progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 4px;
+
+    background: #e71414;
+
+    z-index: 100000;
+
+    transition: width .08s linear;
+}
+
     /* =====================================================
    GLOBAL RESET & BASE STYLES
    ===================================================== */
@@ -1146,7 +1161,7 @@ body.WSNAV-menuOpen {
   font-weight: 900;
   color: transparent; /* text itself is transparent */
   -webkit-text-stroke: 3px white; /* border/outline */
-  text-stroke: 2px white; /* for some browsers */
+  text-stroke : 2px white; /* for some browsers */
   text-align: center;
   width: 100%;
   text-transform: uppercase;
