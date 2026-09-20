@@ -175,6 +175,8 @@
     gap: 20px;
   }
 
+
+  
   .SC-skill h3,
   .SC-certificate-heading h3 {
     margin: 0;
@@ -646,9 +648,30 @@
     }
 
     .SC-certificate-list {
-      grid-template-columns: 1fr;
+      /* grid-template-columns: 1fr; */
+      display: flex;
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      justify-content: space-around;
+
+      
+    }
+    .SC-certificate-copy{
+      display: none;
     }
 
+    .SC-certificate-item {
+      grid-template-columns: 1fr;
+      padding: 4px;
+      width: 100px;
+    }
+
+    .SC-certificate-thumb {
+      width: 100%;
+      aspect-ratio: 1.52;
+      border-radius: 12px;
+    }
     .SC-preview-frame {
       min-height: 260px;
       padding: 8px;
