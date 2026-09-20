@@ -445,6 +445,7 @@
     background: rgba(4, 8, 23, .96);
     box-shadow: 0 40px 100px rgba(0,0,0,.6);
     backdrop-filter: blur(25px);
+    margin: auto;
   }
 
   .SC-dialog::backdrop {

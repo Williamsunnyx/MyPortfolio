@@ -15,7 +15,7 @@
   position: relative;
   isolation: isolate;
   width: 100%;
-  min-height: 940px;
+  min-height: auto;
   overflow: hidden;
   padding: clamp(44px, 5vw, 72px) 22px 52px;
   background:
