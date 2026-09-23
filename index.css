@@ -8110,8 +8110,14 @@ button {
 ========================================================== */
 
 @media (max-width: 900px) {
+
+  body{
+    scroll-behavior: smooth;
+    
+  }
   .HUMAN-CONTACT-layout {
     grid-template-columns: 1fr;
+    
   }
 }
 

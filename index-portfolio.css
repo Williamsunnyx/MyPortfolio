@@ -175,15 +175,18 @@ color: white;
   .WSPortfolio-nav--prev { left: 24px; }
   .WSPortfolio-nav--next { right: 24px; }
   .WSPortfolio-featuredCard { grid-template-columns: 1fr; padding: 18px; }
-  .WSPortfolio-featuredVisual { order: -1; min-height: 100px; }
-  .WSPortfolio-projectImage { min-height: 100px; }
-  .WSPortfolio-sideImage { min-height: 100px !important; }
+  .WSPortfolio-featuredVisual { order: -1; min-height: 100px; overflow: hidden; }
+  .WSPortfolio-projectImage { min-height: 130px; }
+
 
   .WSPortfolio-cta { grid-template-columns: auto 1fr; }
   .WSPortfolio-secondaryBtn { grid-column: 1 / -1; width: 100%; }
   .WSPortfolio-modalHero { height: 140px; }
   .WSPortfolio-modalContent { padding: 24px 18px; }
   .WSPortfolio-modalGrid { grid-template-columns: 1fr; }
+
+.WSPortfolio-meta { display: none;}
+
 }
 
 @media (max-width: 480px) {
